@@ -67,174 +67,172 @@ const translations = {
     }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-    const languageSelection = document.getElementById('language-selection');
-    const startScreen = document.getElementById('start-screen');
-    const questionScreen = document.getElementById('question-screen');
-    const resultScreen = document.getElementById('result-screen');
-    const scoreDisplay = document.getElementById('score-display');
+const languageSelection = document.getElementById('language-selection');
+const startScreen = document.getElementById('start-screen');
+const questionScreen = document.getElementById('question-screen');
+const resultScreen = document.getElementById('result-screen');
+const scoreDisplay = document.getElementById('score-display');
 
-    const enBtn = document.getElementById('en-btn');
-    const frBtn = document.getElementById('fr-btn');
-    const nextBtn = document.getElementById('next-btn');
-    const easyBtn = document.getElementById('easy-btn');
-    const mediumBtn = document.getElementById('medium-btn');
-    const hardBtn = document.getElementById('hard-btn');
+const enBtn = document.getElementById('en-btn');
+const frBtn = document.getElementById('fr-btn');
+const nextBtn = document.getElementById('next-btn');
+const easyBtn = document.getElementById('easy-btn');
+const mediumBtn = document.getElementById('medium-btn');
+const hardBtn = document.getElementById('hard-btn');
 
-    const questionTextEl = document.getElementById('question-text');
-    const answerButtonsEl = document.getElementById('answer-buttons');
-    const resultMessageEl = document.getElementById('result-message');
-    const correctAnswerTextEl = document.getElementById('correct-answer-text');
-    const bioTextEl = document.getElementById('bio-text');
-    const pioneerImageEl = document.getElementById('pioneer-image');
-    const scoreEl = document.getElementById('score');
+const questionTextEl = document.getElementById('question-text');
+const answerButtonsEl = document.getElementById('answer-buttons');
+const resultMessageEl = document.getElementById('result-message');
+const correctAnswerTextEl = document.getElementById('correct-answer-text');
+const bioTextEl = document.getElementById('bio-text');
+const pioneerImageEl = document.getElementById('pioneer-image');
+const scoreEl = document.getElementById('score');
 
-    let shuffledQuestions = [];
-    let currentQuestionIndex = 0;
-    let score = 0;
-    let selectedAnswerIndex = null;
-    let currentLanguage = 'en';
+let shuffledQuestions = [];
+let currentQuestionIndex = 0;
+let score = 0;
+let selectedAnswerIndex = null;
+let currentLanguage = 'en';
 
-    function setLanguage(lang) {
-        currentLanguage = lang;
-        document.querySelectorAll('[data-translate-key]').forEach(element => {
-            const key = element.getAttribute('data-translate-key');
-            if (key) {
-                element.textContent = translations[lang][key];
-            }
-        });
-        languageSelection.classList.add('hidden');
-        startScreen.classList.remove('hidden');
-    }
-
-    function shuffleArray(array) {
-        const newArray = [...array];
-        for (let i = newArray.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+function setLanguage(lang) {
+    currentLanguage = lang;
+    document.querySelectorAll('[data-translate-key]').forEach(element => {
+        const key = element.getAttribute('data-translate-key');
+        if (key) {
+            element.textContent = translations[lang][key];
         }
-        return newArray;
+    });
+    languageSelection.classList.add('hidden');
+    startScreen.classList.remove('hidden');
+}
+
+function shuffleArray(array) {
+    const newArray = [...array];
+    for (let i = newArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+    }
+    return newArray;
+}
+
+function initializeQuiz() {
+    enBtn.addEventListener('click', () => setLanguage('en'));
+    frBtn.addEventListener('click', () => setLanguage('fr'));
+    easyBtn.addEventListener('click', () => startGame('Easy'));
+    mediumBtn.addEventListener('click', () => startGame('Medium'));
+    hardBtn.addEventListener('click', () => startGame('Hard'));
+    nextBtn.addEventListener('click', nextQuestion);
+}
+
+function getShuffledQuestions(difficulty) {
+    const quizData = fullQuizData[currentLanguage];
+    const allQuestionsForLang = quizData.flatMap(person =>
+        person.questions.map(q => ({ ...q, name: person.name, bio: person.bio, imageUrl: person.imageUrl }))
+    );
+    const filteredQuestions = allQuestionsForLang.filter(q => q.difficulty === difficulty);
+    return shuffleArray(filteredQuestions);
+}
+
+function startGame(difficulty) {
+    shuffledQuestions = getShuffledQuestions(difficulty);
+
+    if (shuffledQuestions.length === 0) {
+        alert(`Sorry, no questions are available for the ${difficulty} level yet!`);
+        return;
     }
 
-    function initializeQuiz() {
-        enBtn.addEventListener('click', () => setLanguage('en'));
-        frBtn.addEventListener('click', () => setLanguage('fr'));
-        easyBtn.addEventListener('click', () => startGame('Easy'));
-        mediumBtn.addEventListener('click', () => startGame('Medium'));
-        hardBtn.addEventListener('click', () => startGame('Hard'));
-        nextBtn.addEventListener('click', nextQuestion);
-    }
+    startScreen.classList.add('hidden');
+    scoreDisplay.classList.remove('hidden');
+    questionScreen.classList.remove('hidden');
+    score = 0;
+    currentQuestionIndex = 0;
+    scoreEl.textContent = '0';
+    displayQuestion();
+}
 
-    function getShuffledQuestions(difficulty) {
-        const quizData = fullQuizData[currentLanguage];
-        const allQuestionsForLang = quizData.flatMap(person =>
-            person.questions.map(q => ({ ...q, name: person.name, bio: person.bio, imageUrl: person.imageUrl }))
-        );
-        const filteredQuestions = allQuestionsForLang.filter(q => q.difficulty === difficulty);
-        return shuffleArray(filteredQuestions);
-    }
-
-    function startGame(difficulty) {
-        shuffledQuestions = getShuffledQuestions(difficulty);
-
-        if (shuffledQuestions.length === 0) {
-            alert(`Sorry, no questions are available for the ${difficulty} level yet!`);
-            return;
-        }
-
-        startScreen.classList.add('hidden');
-        scoreDisplay.classList.remove('hidden');
-        questionScreen.classList.remove('hidden');
-        score = 0;
-        currentQuestionIndex = 0;
-        scoreEl.textContent = '0';
-        displayQuestion();
-    }
-
-    function displayQuestion() {
-        resetState();
-        if (currentQuestionIndex >= shuffledQuestions.length) {
-            alert(`${translations[currentLanguage].quizComplete} ${score} ${translations[currentLanguage].outOf} ${shuffledQuestions.length}.`);
-            questionScreen.classList.add('hidden');
-            scoreDisplay.classList.add('hidden');
-            startScreen.classList.remove('hidden');
-            return;
-        }
-
-        const currentQuestion = shuffledQuestions[currentQuestionIndex];
-        questionTextEl.textContent = currentQuestion.question;
-
-        currentQuestion.options.forEach((answer, index) => {
-            const button = document.createElement('button');
-            button.innerText = answer;
-            button.classList.add('answer-btn');
-            button.dataset.index = index.toString();
-            button.addEventListener('click', handleAnswerSelect);
-            answerButtonsEl.appendChild(button);
-        });
-    }
-    
-    function handleAnswerSelect(e) {
-        const selectedButton = e.target;
-        
-        Array.from(answerButtonsEl.children).forEach(button => {
-            button.classList.remove('selected');
-        });
-
-        selectedButton.classList.add('selected');
-        selectedAnswerIndex = parseInt(selectedButton.dataset.index);
-        
-        setTimeout(checkAnswer, 300);
-    }
-
-    function checkAnswer() {
-        const currentQuestion = shuffledQuestions[currentQuestionIndex];
-        const isCorrect = selectedAnswerIndex === currentQuestion.correctAnswerIndex;
-
-        if (isCorrect) {
-            score++;
-            scoreEl.textContent = score.toString();
-        }
-
-        displayResult(isCorrect, currentQuestion);
-    }
-    
-    function displayResult(isCorrect, questionData) {
+function displayQuestion() {
+    resetState();
+    if (currentQuestionIndex >= shuffledQuestions.length) {
+        alert(`${translations[currentLanguage].quizComplete} ${score} ${translations[currentLanguage].outOf} ${shuffledQuestions.length}.`);
         questionScreen.classList.add('hidden');
-        resultScreen.classList.remove('hidden');
-        resultScreen.classList.remove('correct', 'wrong');
-
-        if (isCorrect) {
-            resultMessageEl.textContent = translations[currentLanguage].correctMessage;
-            resultScreen.classList.add('correct');
-            correctAnswerTextEl.textContent = '';
-        } else {
-            resultMessageEl.textContent = translations[currentLanguage].wrongMessage;
-            resultScreen.classList.add('wrong');
-            const correctAnswer = questionData.options[questionData.correctAnswerIndex];
-            correctAnswerTextEl.textContent = `${translations[currentLanguage].correctAnswerWas} ${correctAnswer}`;
-        }
-
-        pioneerImageEl.src = questionData.imageUrl;
-        pioneerImageEl.alt = `Image of ${questionData.name}`;
-        bioTextEl.textContent = questionData.bio;
-        const learnMoreEl = resultScreen.querySelector('[data-translate-key="learnMore"]');
-        learnMoreEl.textContent = `${translations[currentLanguage].learnMore} ${questionData.name}`;
+        scoreDisplay.classList.add('hidden');
+        startScreen.classList.remove('hidden');
+        return;
     }
 
-    function nextQuestion() {
-        currentQuestionIndex++;
-        resultScreen.classList.add('hidden');
-        questionScreen.classList.remove('hidden');
-        displayQuestion();
-    }
+    const currentQuestion = shuffledQuestions[currentQuestionIndex];
+    questionTextEl.textContent = currentQuestion.question;
+
+    currentQuestion.options.forEach((answer, index) => {
+        const button = document.createElement('button');
+        button.innerText = answer;
+        button.classList.add('answer-btn');
+        button.dataset.index = index.toString();
+        button.addEventListener('click', handleAnswerSelect);
+        answerButtonsEl.appendChild(button);
+    });
+}
+
+function handleAnswerSelect(e) {
+    const selectedButton = e.target;
     
-    function resetState() {
-        selectedAnswerIndex = null;
-        while (answerButtonsEl.firstChild) {
-            answerButtonsEl.removeChild(answerButtonsEl.firstChild);
-        }
+    Array.from(answerButtonsEl.children).forEach(button => {
+        button.classList.remove('selected');
+    });
+
+    selectedButton.classList.add('selected');
+    selectedAnswerIndex = parseInt(selectedButton.dataset.index);
+    
+    setTimeout(checkAnswer, 300);
+}
+
+function checkAnswer() {
+    const currentQuestion = shuffledQuestions[currentQuestionIndex];
+    const isCorrect = selectedAnswerIndex === currentQuestion.correctAnswerIndex;
+
+    if (isCorrect) {
+        score++;
+        scoreEl.textContent = score.toString();
     }
 
-    initializeQuiz();
-});
+    displayResult(isCorrect, currentQuestion);
+}
+
+function displayResult(isCorrect, questionData) {
+    questionScreen.classList.add('hidden');
+    resultScreen.classList.remove('hidden');
+    resultScreen.classList.remove('correct', 'wrong');
+
+    if (isCorrect) {
+        resultMessageEl.textContent = translations[currentLanguage].correctMessage;
+        resultScreen.classList.add('correct');
+        correctAnswerTextEl.textContent = '';
+    } else {
+        resultMessageEl.textContent = translations[currentLanguage].wrongMessage;
+        resultScreen.classList.add('wrong');
+        const correctAnswer = questionData.options[questionData.correctAnswerIndex];
+        correctAnswerTextEl.textContent = `${translations[currentLanguage].correctAnswerWas} ${correctAnswer}`;
+    }
+
+    pioneerImageEl.src = questionData.imageUrl;
+    pioneerImageEl.alt = `Image of ${questionData.name}`;
+    bioTextEl.textContent = questionData.bio;
+    const learnMoreEl = resultScreen.querySelector('[data-translate-key="learnMore"]');
+    learnMoreEl.textContent = `${translations[currentLanguage].learnMore} ${questionData.name}`;
+}
+
+function nextQuestion() {
+    currentQuestionIndex++;
+    resultScreen.classList.add('hidden');
+    questionScreen.classList.remove('hidden');
+    displayQuestion();
+}
+
+function resetState() {
+    selectedAnswerIndex = null;
+    while (answerButtonsEl.firstChild) {
+        answerButtonsEl.removeChild(answerButtonsEl.firstChild);
+    }
+}
+
+initializeQuiz();
