@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design & Innovation Quiz</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main id="app-container">
+        <header>
+            <h1 data-translate-key="quizTitle">The Design & Innovation Quiz</h1>
+            <p id="score-display" class="hidden"><span data-translate-key="scoreText">Score</span>: <span id="score">0</span></p>
+        </header>
+
+        <section id="language-selection" class="card">
+            <h2>Select Language / Choisissez la langue</h2>
+            <div id="language-buttons">
+                <button id="en-btn">English</button>
+                <button id="fr-btn">Français</button>
+            </div>
+        </section>
+
+        <section id="start-screen" class="card hidden">
+            <h2 data-translate-key="startTitle">Test Your Knowledge!</h2>
+            <p data-translate-key="startDescription">Select a difficulty to begin the quiz about the pioneers of design, art, and technology.</p>
+            <div id="difficulty-selection">
+                <button id="easy-btn" class="difficulty-btn" data-translate-key="easy">Easy</button>
+                <button id="medium-btn" class="difficulty-btn" data-translate-key="medium">Medium</button>
+                <button id="hard-btn" class="difficulty-btn" data-translate-key="hard">Hard</button>
+            </div>
+        </section>
+
+        <section id="question-screen" class="card hidden">
+            <h2 id="question-text"></h2>
+            <div id="answer-buttons" class="btn-grid">
+                <!-- Answer buttons will be generated here -->
+            </div>
+        </section>
+
+        <section id="result-screen" class="card hidden">
+            <h2 id="result-message" aria-live="polite"></h2>
+            <p id="correct-answer-text"></p>
+            <div id="bio-container">
+                <img id="pioneer-image" src="" alt="" class="pioneer-image">
+                <h3 data-translate-key="learnMore">Learn More:</h3>
+                <p id="bio-text"></p>
+            </div>
+            <button id="next-btn" data-translate-key="nextQuestion">Next Question</button>
+        </section>
+    </main>
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>
