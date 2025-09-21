@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-theme="sand">
     <button id="home-btn" data-translate-key="home">Home</button>
     <main id="app-container">
         <header>
@@ -20,6 +20,10 @@
                  <p id="timer-display"><span data-translate-key="timerText">Time</span>: <span id="time">30</span></p>
             </div>
         </header>
+
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
 
         <section id="language-selection" class="card">
             <h2>Select Language / Choisissez la langue</h2>
@@ -49,6 +53,24 @@
                     </svg>
                 </button>
             </div>
+            <h3 data-translate-key="themeTitle" class="selection-title">Choose a Theme</h3>
+            <div id="theme-selection">
+                <button class="theme-btn" data-theme="sand" aria-label="Sand Theme">
+                    <span style="background-color: #FAEDCA;"></span><span style="background-color: #7EBC89;"></span><span style="background-color: #FE5D26;"></span>
+                </button>
+                <button class="theme-btn" data-theme="shaded" aria-label="Shaded Theme">
+                    <span style="background-color: #AFC2D5;"></span><span style="background-color: #CCDDD3;"></span><span style="background-color: #DFEFCA;"></span><span style="background-color: #B48B7D;"></span>
+                </button>
+                <button class="theme-btn" data-theme="classic" aria-label="Classic Theme">
+                    <span style="background-color: #C5D1EB;"></span><span style="background-color: #92AFD7;"></span><span style="background-color: #5A7684;"></span><span style="background-color: #395B50;"></span>
+                </button>
+                <button class="theme-btn" data-theme="orangy" aria-label="Orangy Theme">
+                    <span style="background-color: #FFAF87;"></span><span style="background-color: #ED6A5E;"></span><span style="background-color: #4CE0B3;"></span><span style="background-color: #377771;"></span>
+                </button>
+                <button class="theme-btn" data-theme="mauve" aria-label="Mauve Theme">
+                    <span style="background-color: #B5D8CC;"></span><span style="background-color: #8D3B72;"></span><span style="background-color: #89A7A7;"></span><span style="background-color: #72E1D1;"></span>
+                </button>
+            </div>
         </section>
 
         <section id="start-screen" class="card">
@@ -73,9 +95,6 @@
             <h2 id="question-text"></h2>
             <div id="answer-buttons" class="btn-grid">
                 <!-- Answer buttons will be generated here -->
-            </div>
-            <div id="progress-container">
-                <div id="progress-bar"></div>
             </div>
         </section>
 

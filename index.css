@@ -1,15 +1,74 @@
 :root {
-    --primary-bg: #FAEDCA;
     --card-bg: #ffffff;
-    --text-color: #333333;
-    --primary-color: #7EBC89;
-    --primary-hover: #6aa877;
-    --correct-color: #7EBC89;
-    --wrong-color: #FE5D26;
     --border-radius: 12px;
     --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     --font-family: 'Poppins', sans-serif;
+    
+    /* Universal feedback colors for UX consistency */
+    --correct-color: #28a745;
+    --wrong-color: #dc3545;
 }
+
+/* Default Theme: Sand */
+body[data-theme="sand"] {
+    --primary-bg: #FAEDCA;
+    --text-color: #333333;
+    --primary-color: #7EBC89;
+    --primary-hover: #6aa877;
+    --easy-btn-bg: #C1DBB3;
+    --medium-btn-bg: #F2C078;
+    --hard-btn-bg: #FE5D26;
+    --streak-color: #FE5D26;
+}
+
+/* Shaded Theme */
+body[data-theme="shaded"] {
+    --primary-bg: #DFEFCA;
+    --text-color: #5c4742;
+    --primary-color: #AFC2D5;
+    --primary-hover: #98a9b8;
+    --easy-btn-bg: #CCDDD3;
+    --medium-btn-bg: #FFF9A5;
+    --hard-btn-bg: #B48B7D;
+    --streak-color: #B48B7D;
+}
+
+/* Classic Theme */
+body[data-theme="classic"] {
+    --primary-bg: #C5D1EB;
+    --text-color: #1F2F16;
+    --primary-color: #5A7684;
+    --primary-hover: #465a65;
+    --easy-btn-bg: #92AFD7;
+    --medium-btn-bg: #5A7684;
+    --hard-btn-bg: #395B50;
+    --streak-color: #395B50;
+}
+
+/* Orangy Theme */
+body[data-theme="orangy"] {
+    --primary-bg: #FFAF87;
+    --text-color: #2a3c3a;
+    --primary-color: #377771;
+    --primary-hover: #2a5a54;
+    --easy-btn-bg: #4CE0B3;
+    --medium-btn-bg: #FF8E72;
+    --hard-btn-bg: #ED6A5E;
+    --streak-color: #ED6A5E;
+}
+
+/* Mauve Theme */
+body[data-theme="mauve"] {
+    --primary-bg: #B5D8CC;
+    --text-color: #3f3542;
+    --primary-color: #8D3B72;
+    --primary-hover: #6e2f5a;
+    --easy-btn-bg: #72E1D1;
+    --medium-btn-bg: #89A7A7;
+    --hard-btn-bg: #8A7090;
+    --streak-color: #8D3B72;
+}
+
 
 * {
     box-sizing: border-box;
@@ -26,7 +85,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 body.feedback-correct {
@@ -65,7 +124,7 @@ header h1 {
 }
 
 #streak-display {
-    color: var(--wrong-color);
+    color: var(--streak-color);
     font-weight: 700;
 }
 
@@ -99,7 +158,7 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s, border-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s, border-color 0.3s, filter 0.2s;
     color: white;
 }
 
@@ -107,7 +166,7 @@ button {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 #language-buttons button {
@@ -130,11 +189,57 @@ button {
     border-radius: 4px;
 }
 
-#next-btn {
+.selection-title {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#theme-selection {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.theme-btn {
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+    border: 2px solid #dee2e6;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    transition: border-color 0.2s;
+}
+
+.theme-btn:hover, .theme-btn.active {
+    border-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.theme-btn span {
+    width: 50%;
+    height: 50%;
+    display: block;
+    flex-shrink: 0;
+}
+.theme-btn[data-theme="sand"] { flex-direction: row; flex-wrap: nowrap; }
+.theme-btn[data-theme="sand"] span { width: 33.33%; height: 100%; }
+
+.theme-btn[data-theme="shaded"],
+.theme-btn[data-theme="classic"],
+.theme-btn[data-theme="orangy"],
+.theme-btn[data-theme="mauve"] {
+    flex-wrap: wrap;
+}
+
+#next-btn, #home-btn, #ten-questions-btn, #time-attack-btn {
     background-color: var(--primary-color);
 }
 
-#next-btn:hover {
+#next-btn:hover, #home-btn:hover, #ten-questions-btn:hover, #time-attack-btn:hover {
     background-color: var(--primary-hover);
     transform: translateY(-2px);
 }
@@ -144,16 +249,9 @@ button {
     top: 20px;
     right: 20px;
     z-index: 1000;
-    background-color: var(--primary-color);
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
 }
-
-#home-btn:hover {
-    background-color: var(--primary-hover);
-    transform: translateY(-2px);
-}
-
 
 #difficulty-selection, #game-mode-selection {
     display: flex;
@@ -166,38 +264,23 @@ button {
     flex-grow: 1;
 }
 
-#ten-questions-btn, #time-attack-btn {
-    background-color: var(--primary-color);
-}
-#ten-questions-btn:hover, #time-attack-btn:hover {
-    background-color: var(--primary-hover);
+.difficulty-btn:hover {
     transform: translateY(-2px);
+    filter: brightness(95%);
 }
 
 #easy-btn {
-    background-color: #C1DBB3;
+    background-color: var(--easy-btn-bg);
     color: var(--text-color);
-}
-#easy-btn:hover {
-    background-color: #aec7a1;
-    transform: translateY(-2px);
 }
 
 #medium-btn {
-    background-color: #F2C078;
+    background-color: var(--medium-btn-bg);
     color: var(--text-color);
-}
-#medium-btn:hover {
-    background-color: #e4b16a;
-    transform: translateY(-2px);
 }
 
 #hard-btn {
-    background-color: #FE5D26;
-}
-#hard-btn:hover {
-    background-color: #e65422;
-    transform: translateY(-2px);
+    background-color: var(--hard-btn-bg);
 }
 
 .btn-grid {
@@ -271,11 +354,15 @@ button {
     background-color: #f8f9fa;
     padding: 0.75rem;
     border-radius: 8px;
-    border-left: 5px solid var(--correct-color);
+    border-left: 5px solid transparent;
+}
+
+#result-screen.correct #correct-answer-text {
+    border-left-color: var(--correct-color);
 }
 
 #result-screen.wrong #correct-answer-text {
-    display: block;
+    border-left-color: var(--wrong-color);
 }
 
 
@@ -341,9 +428,9 @@ button {
     width: 100%;
     background-color: #e9ecef;
     border-radius: 8px;
-    margin-top: 2rem;
     height: 10px;
     overflow: hidden;
+    margin: 0 0 2rem 0;
 }
 
 #progress-bar {

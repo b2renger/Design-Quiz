@@ -14,6 +14,7 @@ const translations = {
         hard: "Hard",
         correctMessage: "Correct!",
         wrongMessage: "Wrong!",
+        theAnswerWas: "The answer was:",
         correctAnswerWas: "The correct answer was:",
         learnMore: "Learn More:",
         nextQuestion: "Next Question",
@@ -35,6 +36,7 @@ const translations = {
         longestStreakStat: "Longest Streak",
         questionsAnsweredStat: "Answered",
         accuracyStat: "Accuracy",
+        themeTitle: "Choose a Theme",
     },
     fr: {
         quizTitle: "Le Quiz du Design et de l'Innovation",
@@ -46,6 +48,7 @@ const translations = {
         hard: "Difficile",
         correctMessage: "Correct !",
         wrongMessage: "Faux !",
+        theAnswerWas: "La réponse était :",
         correctAnswerWas: "La bonne réponse était :",
         learnMore: "En savoir plus :",
         nextQuestion: "Question Suivante",
@@ -67,6 +70,7 @@ const translations = {
         longestStreakStat: "Plus Longue Série",
         questionsAnsweredStat: "Répondues",
         accuracyStat: "Précision",
+        themeTitle: "Choisissez un Thème",
     }
 };
 
@@ -81,6 +85,7 @@ const endScreen = document.getElementById('end-screen');
 // Button elements
 const enBtn = document.getElementById('en-btn');
 const frBtn = document.getElementById('fr-btn');
+const themeButtons = document.querySelectorAll('.theme-btn');
 const difficultyButtons = document.querySelectorAll('.difficulty-btn');
 const tenQuestionsBtn = document.getElementById('ten-questions-btn');
 const timeAttackBtn = document.getElementById('time-attack-btn');
@@ -128,6 +133,26 @@ let gameMode = ''; // '10q' or 'time'
 let timer;
 let timeLeft = 30;
 let isGameActive = false;
+
+function applyTheme(theme) {
+    document.body.dataset.theme = theme;
+    localStorage.setItem('quizTheme', theme);
+    themeButtons.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.theme === theme);
+    });
+}
+
+function initializeTheming() {
+    const savedTheme = localStorage.getItem('quizTheme') || 'sand';
+    applyTheme(savedTheme);
+
+    themeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            applyTheme(button.dataset.theme);
+        });
+    });
+}
+
 
 async function setLanguage(lang) {
     currentLanguage = lang;
@@ -358,19 +383,20 @@ function displayResult(isCorrect, questionData) {
     questionScreen.style.display = 'none';
     resultScreen.style.display = 'block';
     resultScreen.classList.remove('correct', 'wrong');
+    
+    const correctAnswer = questionData.options[questionData.correctAnswerIndex];
 
     if (isCorrect) {
         resultMessageEl.textContent = translations[currentLanguage].correctMessage;
         resultScreen.classList.add('correct');
-        correctAnswerTextEl.style.display = 'none';
+        correctAnswerTextEl.textContent = `${translations[currentLanguage].theAnswerWas} ${correctAnswer}`;
     } else {
         resultMessageEl.textContent = translations[currentLanguage].wrongMessage;
         resultScreen.classList.add('wrong');
-        const correctAnswer = questionData.options[questionData.correctAnswerIndex];
         correctAnswerTextEl.textContent = `${translations[currentLanguage].correctAnswerWas} ${correctAnswer}`;
-        correctAnswerTextEl.style.display = 'block';
     }
     
+    correctAnswerTextEl.style.display = 'block';
     pioneerImageEl.style.display = 'none'; // Images are not available
     bioTextEl.textContent = questionData.bio;
     const learnMoreEl = resultScreen.querySelector('[data-translate-key="learnMore"]');
@@ -486,6 +512,7 @@ function goHome() {
 function resetState() {
     selectedAnswerIndex = null;
     streakDisplay.classList.remove('streaking');
+    correctAnswerTextEl.style.display = 'none';
     while (answerButtonsEl.firstChild) {
         answerButtonsEl.removeChild(answerButtonsEl.firstChild);
     }
@@ -504,6 +531,7 @@ function setupInitialUI() {
     streakDisplay.style.display = 'none';
     questionsAnsweredDisplay.style.display = 'none';
     accuracyDisplay.style.display = 'none';
+    progressContainer.style.display = 'none';
 }
 
 async function main() {
@@ -512,6 +540,7 @@ async function main() {
         if (!response.ok) throw new Error(`Network error: ${response.statusText}`);
         enQuizData = await response.json();
         currentQuizData = enQuizData;
+        initializeTheming();
         initializeQuiz();
         setupInitialUI();
     } catch (error) {
