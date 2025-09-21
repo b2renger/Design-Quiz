@@ -1,0 +1,2264 @@
+[
+  {
+    "name": "Louise Bourgeois",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Louise Bourgeois is most famous for her massive sculptures of what creature?",
+        "answers": [
+          "Snakes",
+          "Spiders",
+          "Birds",
+          "Wolves"
+        ],
+        "correct_answer": "Spiders"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is the title of her famous, monumental spider sculpture, which she dedicated to her mother?",
+        "answers": [
+          "Arachne",
+          "Maman",
+          "Spinner",
+          "Web"
+        ],
+        "correct_answer": "Maman"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Before becoming a full-time artist, Bourgeois studied what subject at the Sorbonne in Paris?",
+        "answers": [
+          "Literature",
+          "Philosophy",
+          "Mathematics",
+          "Medicine"
+        ],
+        "correct_answer": "Mathematics"
+      }
+    ],
+    "know_more": "Louise Bourgeois was a French-American artist best known for her large-scale sculpture and installation art. Her work is deeply personal and psychoanalytic, often revolving around themes of childhood, family, sexuality, and the body. Her iconic spider sculptures are a direct reference to her mother, who was a weaver."
+  },
+  {
+    "name": "Charles Eames",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Charles Eames, along with his wife Ray, is most famous for designing what type of product?",
+        "answers": [
+          "Automobiles",
+          "Clothing",
+          "Furniture",
+          "Computers"
+        ],
+        "correct_answer": "Furniture"
+      },
+      {
+        "difficulty": "medium",
+        "question": "The iconic Eames Lounge Chair is primarily made from what materials?",
+        "answers": [
+          "Plastic and Steel",
+          "Molded Plywood and Leather",
+          "Fiberglass and Aluminum",
+          "Wicker and Fabric"
+        ],
+        "correct_answer": "Molded Plywood and Leather"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Why was Charles Eames reportedly dismissed from the architecture program at Washington University in St. Louis?",
+        "answers": [
+          "For failing his exams",
+          "For his advocacy of Frank Lloyd Wright and 'too modern' views",
+          "For plagiarism",
+          "For lack of attendance"
+        ],
+        "correct_answer": "For his advocacy of Frank Lloyd Wright and 'too modern' views"
+      }
+    ],
+    "know_more": "Charles Eames was an American designer, architect, and filmmaker who, with his wife Ray Eames, made groundbreaking contributions to architecture, furniture design, industrial design, and manufacturing. Their work was characterized by a playful yet rigorous approach, and they are celebrated for their innovative use of materials like molded plywood and fiberglass."
+  },
+  {
+    "name": "Alessandro Mendini",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Which of these is Alessandro Mendini's most famous and iconic armchair design? [19]",
+        "answers": [
+          "The Egg Chair",
+          "The Barcelona Chair",
+          "The Proust Armchair",
+          "The Wassily Chair"
+        ],
+        "correct_answer": "The Proust Armchair"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Mendini's Proust Armchair is a 'redesign' of a Baroque-style chair, famously decorated with a pattern inspired by which art movement? [31]",
+        "answers": [
+          "Cubism",
+          "Surrealism",
+          "Pointillism",
+          "Futurism"
+        ],
+        "correct_answer": "Pointillism"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Before co-founding the design group Studio Alchimia, Mendini served as the editor-in-chief for which influential design magazine? [36]",
+        "answers": [
+          "Wallpaper*",
+          "Metropolis",
+          "Domus",
+          "Architectural Digest"
+        ],
+        "correct_answer": "Domus"
+      }
+    ],
+    "know_more": "Alessandro Mendini was an Italian designer, architect, and design theorist who played a crucial role in the development of Italian Radical and Postmodern design. [36] His work is known for its playful, colorful, and often provocative nature, challenging the conventions of modernism. His Proust Armchair is a celebrated example of his 'redesign' philosophy. [14, 19, 31]"
+  },
+  {
+    "name": "Andrée Putman",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Andrée Putman was a famous French interior and product designer known for what signature color palette?",
+        "answers": [
+          "Bright neons",
+          "Earthy tones",
+          "Minimalist black and white",
+          "Pastel colors"
+        ],
+        "correct_answer": "Minimalist black and white"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Which iconic New York hotel, designed in 1984, is considered Andrée Putman's breakthrough project that brought her international fame?",
+        "answers": [
+          "The Plaza Hotel",
+          "The Waldorf Astoria",
+          "Morgans Hotel",
+          "The Carlyle"
+        ],
+        "correct_answer": "Morgans Hotel"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Before starting her own design firm, what was Andrée Putman's profession in the 1950s and 60s?",
+        "answers": [
+          "Architect",
+          "Fashion model",
+          "Journalist for magazines like Elle and L'Œil",
+          "Classical pianist"
+        ],
+        "correct_answer": "Journalist for magazines like Elle and L'Œil"
+      }
+    ],
+    "know_more": "Andrée Putman was a highly influential French interior and product designer. She was renowned for her sophisticated, minimalist style, often employing a black and white checkerboard pattern. Her 1984 design for the Morgans Hotel in New York set a new standard for boutique hotels and catapulted her to international stardom."
+  },
+  {
+    "name": "Charlotte Perriand",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Charlotte Perriand was a prominent French architect and designer, most famously associated with which legendary architect's studio?",
+        "answers": [
+          "Frank Lloyd Wright",
+          "Mies van der Rohe",
+          "Le Corbusier",
+          "Walter Gropius"
+        ],
+        "correct_answer": "Le Corbusier"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Which iconic piece of furniture did Perriand co-design with Le Corbusier and Pierre Jeanneret, featuring a reclining frame on a steel base?",
+        "answers": [
+          "LC1 Sling Chair",
+          "LC2 Grand Confort Armchair",
+          "LC4 Chaise Longue",
+          "LC6 Table"
+        ],
+        "correct_answer": "LC4 Chaise Longue"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Perriand spent several years during World War II in which country, a period that profoundly influenced her later designs with its emphasis on natural materials and craftsmanship?",
+        "answers": [
+          "Brazil",
+          "Japan",
+          "India",
+          "Mexico"
+        ],
+        "correct_answer": "Japan"
+      }
+    ],
+    "know_more": "Charlotte Perriand was a pioneering French architect and designer, and a central figure in the Modernist movement. She collaborated closely with Le Corbusier for about a decade, contributing significantly to the design of iconic furniture. Her work is characterized by functionality, a human-centric approach, and an innovative use of materials, profoundly influenced by her time in Japan."
+  },
+  {
+    "name": "Alvar Aalto",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Alvar Aalto was a celebrated architect and designer from which country?",
+        "answers": [
+          "Sweden",
+          "Denmark",
+          "Finland",
+          "Norway"
+        ],
+        "correct_answer": "Finland"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Aalto is famous for his innovative technique of bending what material to create furniture with organic, flowing lines? [16, 44]",
+        "answers": [
+          "Steel",
+          "Plastic",
+          "Plywood",
+          "Aluminum"
+        ],
+        "correct_answer": "Plywood"
+      },
+      {
+        "difficulty": "hard",
+        "question": "For which specific type of building did Aalto design his famous Paimio Chair, with the angle of the back intended to help patients breathe more easily? [10, 29, 30]",
+        "answers": [
+          "A concert hall",
+          "A library",
+          "A tuberculosis sanatorium",
+          "A university"
+        ],
+        "correct_answer": "A tuberculosis sanatorium"
+      }
+    ],
+    "know_more": "Alvar Aalto is regarded as one of Finland's greatest architects and a key figure in Modernism. [16, 37] His work took a humanistic approach, characterized by organic forms and the use of natural materials. [16] He designed numerous landmark buildings and also made significant contributions to furniture design, pioneering techniques for bending laminated wood. [44]"
+  },
+  {
+    "name": "Ariane Mnouchkine",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Ariane Mnouchkine is the founder and director of which acclaimed French avant-garde theatre company?",
+        "answers": [
+          "Comédie-Française",
+          "Théâtre de la Ville",
+          "Théâtre du Soleil",
+          "Odéon-Théâtre de l'Europe"
+        ],
+        "correct_answer": "Théâtre du Soleil"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Mnouchkine is known for a collaborative creative process where the actors and crew contribute to all aspects of the production, a style often referred to as what?",
+        "answers": [
+          "Method Acting",
+          "Epic Theatre",
+          "Création Collective",
+          "Theatre of the Absurd"
+        ],
+        "correct_answer": "Création Collective"
+      },
+      {
+        "difficulty": "hard",
+        "question": "In 1978, Mnouchkine directed a lengthy biographical film about which famous French playwright? [7, 13, 27]",
+        "answers": [
+          "Racine",
+          "Corneille",
+          "Molière",
+          "Ionesco"
+        ],
+        "correct_answer": "Molière"
+      }
+    ],
+    "know_more": "Ariane Mnouchkine is a highly influential French stage and film director. In 1964, she founded the avant-garde Parisian theatre company Théâtre du Soleil, which is renowned for its large-scale productions, collaborative creative process, and use of physical theatre and influences from diverse world cultures."
+  },
+  {
+    "name": "Margaret Hamilton",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Margaret Hamilton was the lead software engineer for which historic NASA program? [6, 25]",
+        "answers": [
+          "Mercury Program",
+          "Gemini Program",
+          "Apollo Program",
+          "Space Shuttle Program"
+        ],
+        "correct_answer": "Apollo Program"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Hamilton is credited with coining what now-ubiquitous term to legitimize the work of programmers as a formal engineering discipline? [1, 9, 24]",
+        "answers": [
+          "Computer Science",
+          "Information Technology",
+          "Software Engineering",
+          "Data Processing"
+        ],
+        "correct_answer": "Software Engineering"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Before the Apollo missions, Hamilton worked on the SAGE Project, which was designed for what purpose? [2, 20]",
+        "answers": [
+          "Predicting weather systems",
+          "Tracking Soviet satellites",
+          "Air defense and tracking enemy aircraft",
+          "Breaking enemy codes"
+        ],
+        "correct_answer": "Air defense and tracking enemy aircraft"
+      }
+    ],
+    "know_more": "Margaret Hamilton is an American computer scientist and systems engineer who was the Director of the Software Engineering Division at the MIT Instrumentation Laboratory. [2] She led the team that developed the on-board flight software for NASA's Apollo program, which was crucial for the moon landing. [4, 6] She is also credited with popularizing the term 'software engineering'. [1, 9]"
+  },
+  {
+    "name": "Gae Aulenti",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Gae Aulenti was a famous architect and designer from which country?",
+        "answers": [
+          "Spain",
+          "France",
+          "Italy",
+          "Portugal"
+        ],
+        "correct_answer": "Italy"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Aulenti is widely known for her 1965 design of what iconic lamp, whose name means 'bat' in Italian? [8, 11, 26]",
+        "answers": [
+          "Lucciola Lamp",
+          "Pipistrello Lamp",
+          "Cobra Lamp",
+          "Arco Lamp"
+        ],
+        "correct_answer": "Pipistrello Lamp"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Gae Aulenti was the lead architect for the conversion of a former Beaux-Arts railway station in Paris into which famous museum? [12, 47]",
+        "answers": [
+          "The Louvre",
+          "Centre Pompidou",
+          "Musée d'Orsay",
+          "Musée du Quai Branly"
+        ],
+        "correct_answer": "Musée d'Orsay"
+      }
+    ],
+    "know_more": "Gae Aulenti was one of the most influential Italian architects and designers of the post-war era. [47] Her work spanned industrial and exhibition design, furniture, lighting, and large-scale architectural projects. She is celebrated for converting a Paris train station into the Musée d'Orsay and for designing the iconic Pipistrello lamp. [12, 47]"
+  },
+  {
+    "name": "Steve Wozniak",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Steve Wozniak co-founded which major tech company alongside Steve Jobs?",
+        "answers": [
+          "Microsoft",
+          "IBM",
+          "Apple Computer",
+          "Hewlett-Packard"
+        ],
+        "correct_answer": "Apple Computer"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Which early personal computer, largely designed single-handedly by Wozniak, was a huge success and credited with launching the PC industry?",
+        "answers": [
+          "The Macintosh",
+          "The Apple II",
+          "The IBM PC",
+          "The Altair 8800"
+        ],
+        "correct_answer": "The Apple II"
+      },
+      {
+        "difficulty": "hard",
+        "question": "What was the name of the company Wozniak founded after leaving Apple, which created the first programmable universal remote control?",
+        "answers": [
+          "NeXT",
+          "Pixar",
+          "CL 9",
+          "Be Inc."
+        ],
+        "correct_answer": "CL 9"
+      }
+    ],
+    "know_more": "Stephen 'Woz' Wozniak is an American technology entrepreneur, engineer, and computer programmer. In 1976, he co-founded Apple Computer with Steve Jobs. Wozniak is the technical genius behind the company's first products, single-handedly designing the Apple I and Apple II computers, which were instrumental in the personal computer revolution."
+  },
+  {
+    "name": "Douglas Engelbart",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Douglas Engelbart is most famously credited with inventing which common computer peripheral?",
+        "answers": [
+          "The Keyboard",
+          "The Monitor",
+          "The Mouse",
+          "The Printer"
+        ],
+        "correct_answer": "The Mouse"
+      },
+      {
+        "difficulty": "medium",
+        "question": "In 1968, Engelbart gave a groundbreaking 90-minute live demonstration of his team's work, which is now famously known as what?",
+        "answers": [
+          "The Great Leap Forward",
+          "The Dawn of Computing",
+          "The Mother of All Demos",
+          "The Big Reveal"
+        ],
+        "correct_answer": "The Mother of All Demos"
+      },
+      {
+        "difficulty": "hard",
+        "question": "What was the name of the revolutionary computer system developed by Engelbart and his team at SRI, which featured the first mouse, hypertext, and graphical user interface elements?",
+        "answers": [
+          "Xerox Alto",
+          "Apple Macintosh",
+          "oN-Line System (NLS)",
+          "ARPANET"
+        ],
+        "correct_answer": "oN-Line System (NLS)"
+      }
+    ],
+    "know_more": "Douglas Engelbart was an American engineer and inventor, and a pioneer of human-computer interaction. He is best known for inventing the computer mouse and for his 1968 'Mother of All Demos,' which showcased a complete integrated computer system called the oN-Line System (NLS) that introduced concepts like hypertext, object addressing, and dynamic file linking."
+  },
+  {
+    "name": "Marcel Duchamp",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Marcel Duchamp shocked the art world by presenting a common urinal as a work of art. What was the title of this piece?",
+        "answers": [
+          "Porcelain",
+          "Fountain",
+          "White Ware",
+          "The Toilet"
+        ],
+        "correct_answer": "Fountain"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What term did Duchamp coin for his artworks that were made from manufactured objects which he designated as art?",
+        "answers": [
+          "Found Objects",
+          "Assemblages",
+          "Readymades",
+          "Constructions"
+        ],
+        "correct_answer": "Readymades"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Which of Duchamp's paintings caused a scandal at the 1913 Armory Show in New York, with one critic describing it as an 'explosion in a shingle factory'?",
+        "answers": [
+          "The King and Queen Surrounded by Swift Nudes",
+          "Bicycle Wheel",
+          "Nude Descending a Staircase, No. 2",
+          "The Bride"
+        ],
+        "correct_answer": "Nude Descending a Staircase, No. 2"
+      }
+    ],
+    "know_more": "Marcel Duchamp was a French-American painter, sculptor, and writer whose work is associated with Cubism, Dada, and Surrealism. He is one of the most influential artists of the 20th century, challenging traditional notions of art with his concept of the 'Readymade.' His works like 'Fountain' and 'Nude Descending a Staircase, No. 2' fundamentally changed the definition of what art could be."
+  },
+  {
+    "name": "Jean Prouvé",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Jean Prouvé was a French designer and architect primarily known for his innovative work with what material?",
+        "answers": [
+          "Carved Wood",
+          "Blown Glass",
+          "Sheet Metal",
+          "Poured Concrete"
+        ],
+        "correct_answer": "Sheet Metal"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Prouvé's philosophy was centered on manufacturing logic, leading him to design buildings and furniture that were what?",
+        "answers": [
+          "Ornate and decorative",
+          "Demountable and prefabricated",
+          "Made from single, solid pieces",
+          "Intentionally difficult to assemble"
+        ],
+        "correct_answer": "Demountable and prefabricated"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Which iconic chair designed by Prouvé is famous for its structure where the back legs, which bear the most weight, are made of a stronger, voluminous hollow section?",
+        "answers": [
+          "Antony Chair",
+          "Cité Armchair",
+          "Standard Chair",
+          "Métropole Chair"
+        ],
+        "correct_answer": "Standard Chair"
+      }
+    ],
+    "know_more": "Jean Prouvé was a French metal worker, self-taught architect, and designer. He pioneered the use of sheet metal and aluminum in construction and furniture, creating prefabricated and demountable structures. His designs, like the iconic Standard Chair, are based on structural logic and manufacturing constraints, reflecting a 'design by making' philosophy."
+  },
+  {
+    "name": "India Mahdavi",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Iranian-French architect and designer India Mahdavi is often called the 'queen of...' what?",
+        "answers": [
+          "Minimalism",
+          "Concrete",
+          "Color",
+          "Steel"
+        ],
+        "correct_answer": "Color"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Which iconic, monochromatic pink restaurant in London became an instant Instagram sensation and is one of Mahdavi's most famous interior designs?",
+        "answers": [
+          "The Lecture Room & Library",
+          "The Glade",
+          "The Gallery at Sketch",
+          "The Parlour"
+        ],
+        "correct_answer": "The Gallery at Sketch"
+      },
+      {
+        "difficulty": "hard",
+        "question": "What is the name of Mahdavi's versatile, best-selling ceramic stool, which is often described as resembling a chess piece or a colorful macaron?",
+        "answers": [
+          "Cap Martin Stool",
+          "Bishop Stool",
+          "Joker Stool",
+          "Charlotte Stool"
+        ],
+        "correct_answer": "Bishop Stool"
+      }
+    ],
+    "know_more": "India Mahdavi is a Paris-based architect and designer celebrated for her vibrant and joyful use of color. Her work spans architecture, interior design, and furniture. She is famously known for designing the all-pink interior of The Gallery at Sketch in London, a project that solidified her reputation as a master colorist in the design world."
+  },
+  {
+    "name": "Ettore Sottsass",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "In the 1980s, Ettore Sottsass founded a highly influential Postmodern design collective known as what?",
+        "answers": [
+          "Bauhaus",
+          "De Stijl",
+          "Memphis Group",
+          "Archigram"
+        ],
+        "correct_answer": "Memphis Group"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Before his Memphis period, Sottsass designed which iconic, bright red portable typewriter for Olivetti in 1969?",
+        "answers": [
+          "Lettera 22",
+          "Valentine",
+          "Studio 42",
+          "Lexikon 80"
+        ],
+        "correct_answer": "Valentine"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Which of these pieces, a bookcase resembling a quirky robot made of colorful laminates, is one of Sottsass's most famous designs for the Memphis Group?",
+        "answers": [
+          "Carlton Room Divider",
+          "Tahiti Lamp",
+          "Casablanca Sideboard",
+          "Super Lamp"
+        ],
+        "correct_answer": "Carlton Room Divider"
+      }
+    ],
+    "know_more": "Ettore Sottsass was an Italian architect and designer who was a leading figure in the Postmodern design movement. He is best known as the founder of the Memphis Group, which challenged the conventions of Modernism with its colorful, playful, and radical furniture designs. Earlier in his career, he also created iconic products for Olivetti, such as the Valentine typewriter."
+  },
+  {
+    "name": "Galina Balashova",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Galina Balashova was a pioneering architect and designer for what country's highly secretive space program?",
+        "answers": [
+          "The United States (NASA)",
+          "The Soviet Union (Roscosmos)",
+          "China (CNSA)",
+          "The European Space Agency (ESA)"
+        ],
+        "correct_answer": "The Soviet Union (Roscosmos)"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Balashova was responsible for the interior design of which famous series of spacecraft and space stations?",
+        "answers": [
+          "Apollo and Skylab",
+          "Soyuz and Salyut",
+          "Mercury and Gemini",
+          "Shenzhou and Tiangong"
+        ],
+        "correct_answer": "Soyuz and Salyut"
+      },
+      {
+        "difficulty": "hard",
+        "question": "What artistic element did Balashova often incorporate into her zero-gravity designs, like the one seen from the Apollo-Soyuz Test Project, to provide a sense of orientation for cosmonauts?",
+        "answers": [
+          "A small window looking towards Earth",
+          "A landscape painting on a wall",
+          "Color-coding the 'floor' and 'ceiling'",
+          "Arrows pointing up and down"
+        ],
+        "correct_answer": "A landscape painting on a wall"
+      }
+    ],
+    "know_more": "Galina Balashova was a Russian architect and designer who worked as a consultant for the Soviet space program. For decades, her crucial role was kept secret. She was responsible for the interior design of the Soyuz spacecraft and Salyut and Mir space stations, pioneering the field of architecture in zero-gravity environments and focusing on the psychological comfort of cosmonauts."
+  },
+  {
+    "name": "Alexandre Trauner",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Alexandre Trauner was a highly influential, Hungarian-born artist who worked in which profession in the film industry?",
+        "answers": [
+          "Director",
+          "Cinematographer",
+          "Production Designer / Art Director",
+          "Costume Designer"
+        ],
+        "correct_answer": "Production Designer / Art Director"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Trauner won an Academy Award for Best Art Direction for which classic Billy Wilder film, known for its vast, perspective-bending office set?",
+        "answers": [
+          "Some Like It Hot",
+          "Sunset Boulevard",
+          "The Apartment",
+          "Witness for the Prosecution"
+        ],
+        "correct_answer": "The Apartment"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Before his Hollywood career, Trauner was a key figure in the French film movement known as Poetic Realism, creating memorable sets for which director's films, such as 'Le Jour Se Lève'?",
+        "answers": [
+          "Jean Renoir",
+          "Jean-Luc Godard",
+          "François Truffaut",
+          "Marcel Carné"
+        ],
+        "correct_answer": "Marcel Carné"
+      }
+    ],
+    "know_more": "Alexandre Trauner was a celebrated production designer and art director who created the visual worlds for over 100 films. He was a master of cinematic realism, from his early work in French Poetic Realism with director Marcel Carné to his Oscar-winning designs for Hollywood directors like Billy Wilder, for whom he designed the iconic sets of 'The Apartment'."
+  },
+  {
+    "name": "Donna Haraway",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Donna Haraway is a prominent scholar best known for her 1985 essay that uses what figure to challenge traditional ideas about feminism, socialism, and materialism?",
+        "answers": [
+          "The Alien",
+          "The Cyborg",
+          "The Ghost",
+          "The Vampire"
+        ],
+        "correct_answer": "The Cyborg"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is the title of Haraway's influential 1985 work that introduced the concept of the cyborg as a political myth?",
+        "answers": [
+          "Simians, Cyborgs, and Women",
+          "A Cyborg Manifesto",
+          "The Companion Species Manifesto",
+          "Primate Visions"
+        ],
+        "correct_answer": "A Cyborg Manifesto"
+      },
+      {
+        "difficulty": "hard",
+        "question": "In her later work, Haraway developed the concept of 'companion species' to explore the interconnected relationships between humans and what specific animal?",
+        "answers": [
+          "Cats",
+          "Primates",
+          "Dogs",
+          "Birds"
+        ],
+        "correct_answer": "Dogs"
+      }
+    ],
+    "know_more": "Donna Haraway is an American philosopher and feminist scholar who is a leading voice in the fields of science and technology studies. Her seminal 1985 essay, 'A Cyborg Manifesto,' rejects rigid boundaries between humans, animals, and machines and has been profoundly influential in contemporary feminist theory and cyberculture."
+  },
+  {
+    "name": "Roger Tallon",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Roger Tallon is arguably the most famous French industrial designer, best known for designing which iconic high-speed train?",
+        "answers": [
+          "The Shinkansen (Bullet Train)",
+          "The ICE (Intercity-Express)",
+          "The TGV (Train à Grande Vitesse)",
+          "The Eurostar"
+        ],
+        "correct_answer": "The TGV (Train à Grande Vitesse)"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Besides trains, Tallon also designed a famous spiral staircase, which is known by what model number?",
+        "answers": [
+          "Model T",
+          "Module M400",
+          "Series 7",
+          "Type 64"
+        ],
+        "correct_answer": "Module M400"
+      },
+      {
+        "difficulty": "hard",
+        "question": "In the 1970s, Tallon created a futuristic portable television set for the brand Téléavia, which was famously nicknamed what?",
+        "answers": [
+          "The Cube",
+          "The Globe",
+          "The Pyramid",
+          "P111 'Porty'"
+        ],
+        "correct_answer": "P111 'Porty'"
+      }
+    ],
+    "know_more": "Roger Tallon was a pioneering French industrial designer who shaped modern French design. His most celebrated achievement is the design of the TGV high-speed train for the French national railway. His prolific career included work on everything from furniture and spiral staircases to cameras, television sets, and branding for major companies."
+  },
+  {
+    "name": "Zaha Hadid",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "The late Zaha Hadid was a world-renowned Iraqi-British architect, famous for her futuristic designs characterized by what geometric quality?",
+        "answers": [
+          "Sharp right angles",
+          "Perfectly symmetrical forms",
+          "Sweeping curves and flowing lines",
+          "Small, repeating patterns"
+        ],
+        "correct_answer": "Sweeping curves and flowing lines"
+      },
+      {
+        "difficulty": "medium",
+        "question": "In 2004, Zaha Hadid achieved a major milestone by becoming the first woman to be awarded which prestigious prize in architecture?",
+        "answers": [
+          "The Pritzker Architecture Prize",
+          "The RIBA Royal Gold Medal",
+          "The AIA Gold Medal",
+          "The Aga Khan Award for Architecture"
+        ],
+        "correct_answer": "The Pritzker Architecture Prize"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Which building, one of her first major constructed works, was a fire station located on the campus of a German design company?",
+        "answers": [
+          "Rosenthal Center for Contemporary Art",
+          "Phaeno Science Center",
+          "Vitra Fire Station",
+          "MAXXI Museum"
+        ],
+        "correct_answer": "Vitra Fire Station"
+      }
+    ],
+    "know_more": "Dame Zaha Hadid was an Iraqi-British architect celebrated as a revolutionary figure in her field. Known for her intensely futuristic designs with sweeping curves and complex geometries, she was often called the 'Queen of the Curve.' In 2004, she became the first woman to receive the Pritzker Architecture Prize, the highest honor in architecture."
+  },
+  {
+    "name": "Verner Panton",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Verner Panton was a Danish designer famous for his futuristic furniture and interiors that prominently featured what?",
+        "answers": [
+          "Rough, unfinished wood",
+          "Minimalist black and white schemes",
+          "Vibrant, psychedelic colors and flowing shapes",
+          "Heavy, industrial metals"
+        ],
+        "correct_answer": "Vibrant, psychedelic colors and flowing shapes"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is the name of Panton's most iconic chair, the first to be manufactured in a single piece of plastic?",
+        "answers": [
+          "The Cone Chair",
+          "The Panton Chair",
+          "The Heart Chair",
+          "The Peacock Chair"
+        ],
+        "correct_answer": "The Panton Chair"
+      },
+      {
+        "difficulty": "hard",
+        "question": "What was the name of the immersive, fantastical interior landscape Panton created for the Bayer company's trade fair stand in 1970?",
+        "answers": [
+          "The Living Tower",
+          "Phantasy Landscape",
+          "Visiona 2",
+          "Color-Space '70"
+        ],
+        "correct_answer": "Visiona 2"
+      }
+    ],
+    "know_more": "Verner Panton was a Danish furniture and interior designer who was a leading figure of the Pop Art and Space Age design movements of the 1960s. He was celebrated for his avant-garde use of plastics and vibrant colors, and for creating immersive, total environments. His most famous creation is the Panton Chair, a single-form, injection-molded plastic chair."
+  },
+  {
+    "name": "Victor Papanek",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Victor Papanek was a designer and educator who was a strong advocate for what kind of design philosophy?",
+        "answers": [
+          "Design for luxury and exclusivity",
+          "Socially and ecologically responsible design",
+          "Design driven purely by aesthetics",
+          "Profit-centered commercial design"
+        ],
+        "correct_answer": "Socially and ecologically responsible design"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is the title of Papanek's influential 1971 book that critiques mainstream industrial design and advocates for sustainable, human-centered solutions?",
+        "answers": [
+          "The Design of Everyday Things",
+          "Design for the Real World",
+          "Cradle to Cradle",
+          "Universal Principles of Design"
+        ],
+        "correct_answer": "Design for the Real World"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Papanek famously described a design for a radio receiver intended for developing countries that could be powered by what unconventional and readily available fuel source?",
+        "answers": [
+          "Solar power",
+          "Wind power",
+          "Burning cow dung",
+          "Kinetic energy from a hand crank"
+        ],
+        "correct_answer": "Burning cow dung"
+      }
+    ],
+    "know_more": "Victor Papanek was an Austrian-American designer, author, and educator who was a pioneer of sustainable and socially responsible design. His highly influential book, 'Design for the Real World: Human Ecology and Social Change,' challenged the design profession to address real-world problems and the needs of the poor, disabled, and elderly, rather than focusing on commercial consumerism."
+  },
+  {
+    "name": "Lisa Strausfeld",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Lisa Strausfeld is a leading American designer known for her pioneering work in what specific field?",
+        "answers": [
+          "Fashion Design",
+          "Automotive Design",
+          "Data Visualization and Interactive Design",
+          "Interior Architecture"
+        ],
+        "correct_answer": "Data Visualization and Interactive Design"
+      },
+      {
+        "difficulty": "medium",
+        "question": "For over a decade, Strausfeld was a partner at which world-renowned international design consultancy?",
+        "answers": [
+          "IDEO",
+          "Frog Design",
+          "Pentagram",
+          "Wolff Olins"
+        ],
+        "correct_answer": "Pentagram"
+      },
+      {
+        "difficulty": "hard",
+        "question": "While at Pentagram, Strausfeld's team designed the innovative 'Sugar' user interface for which groundbreaking educational technology project?",
+        "answers": [
+          "The Apple Macintosh",
+          "The IBM Personal Computer",
+          "One Laptop per Child (OLPC)",
+          "The Raspberry Pi"
+        ],
+        "correct_answer": "One Laptop per Child (OLPC)"
+      }
+    ],
+    "know_more": "Lisa Strausfeld is an American information architect and designer who specializes in making complex data understandable and beautiful. As a former partner at Pentagram, she led teams on major projects for clients like The New York Times and One Laptop per Child. Her work focuses on creating interactive timelines, data visualizations, and user interfaces that reveal stories within data."
+  },
+  {
+    "name": "George Nelson",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "George Nelson was a foundational figure in American modernism and served as the Director of Design for which famous furniture company?",
+        "answers": [
+          "Knoll",
+          "Vitra",
+          "Steelcase",
+          "Herman Miller"
+        ],
+        "correct_answer": "Herman Miller"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Which of these iconic Mid-Century Modern designs was created by George Nelson's design office?",
+        "answers": [
+          "The Eames Lounge Chair",
+          "The Noguchi Table",
+          "The Marshmallow Sofa",
+          "The Womb Chair"
+        ],
+        "correct_answer": "The Marshmallow Sofa"
+      },
+      {
+        "difficulty": "hard",
+        "question": "What revolutionary concept did Nelson introduce in a 1945 Life magazine article, which proposed a modular, floor-to-ceiling system for home organization?",
+        "answers": [
+          "The Open-Plan Office",
+          "The Family Room",
+          "The Storage Wall",
+          "The Built-in Kitchen"
+        ],
+        "correct_answer": "The Storage Wall"
+      }
+    ],
+    "know_more": "George Nelson was an American industrial designer and one of the founders of American Modernism. As the Director of Design for Herman Miller, he recruited legendary designers like Charles and Ray Eames. His own studio created iconic furniture and objects, including the Marshmallow Sofa, the Ball Clock, and the Coconut Chair, defining the optimistic aesthetic of the post-war era."
+  },
+  {
+    "name": "Muriel Cooper",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Muriel Cooper was a pioneering graphic designer, researcher, and educator at which prestigious American university?",
+        "answers": [
+          "Harvard University",
+          "Yale University",
+          "Massachusetts Institute of Technology (MIT)",
+          "Rhode Island School of Design (RISD)"
+        ],
+        "correct_answer": "Massachusetts Institute of Technology (MIT)"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Cooper was the longtime art director for MIT's publishing house and designed its iconic 'logo,' which is a series of seven abstract bars representing what?",
+        "answers": [
+          "Seven books on a shelf",
+          "The letters 'M', 'I', 'T', 'P' for MIT Press",
+          "A stack of computer punch cards",
+          "The pillars of the university"
+        ],
+        "correct_answer": "The letters 'M', 'I', 'T', 'P' for MIT Press"
+      },
+      {
+        "difficulty": "hard",
+        "question": "In 1985, Muriel Cooper co-founded what groundbreaking research center at MIT with Nicholas Negroponte?",
+        "answers": [
+          "The Artificial Intelligence Laboratory",
+          "The Center for Advanced Visual Studies",
+          "The Media Lab",
+          "The Lincoln Laboratory"
+        ],
+        "correct_answer": "The Media Lab"
+      }
+    ],
+    "know_more": "Muriel Cooper was a visionary graphic designer who pioneered the use of computers in design. As the art director for the MIT Press, she created a distinct and influential visual identity. She later co-founded the world-renowned MIT Media Lab, where she explored interactive and dynamic information design, foreseeing many of the principles of modern user interface design."
+  },
+  {
+    "name": "Jean Giraud Moebius",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Jean Giraud, better known by his pseudonym Mœbius, was a legendary French artist famous for his work in what medium?",
+        "answers": [
+          "Oil painting",
+          "Sculpture",
+          "Comic books and graphic novels",
+          "Photography"
+        ],
+        "correct_answer": "Comic books and graphic novels"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Under his real name, Jean Giraud, he was the artist for which gritty and realistic Western comics series?",
+        "answers": [
+          "Lucky Luke",
+          "Blueberry",
+          "The Lone Ranger",
+          "Tex Willer"
+        ],
+        "correct_answer": "Blueberry"
+      },
+      {
+        "difficulty": "hard",
+        "question": "As Mœbius, he brought his unique vision to Hollywood, doing concept art and design work for which classic 1979 science-fiction horror film?",
+        "answers": [
+          "Star Wars",
+          "Blade Runner",
+          "Alien",
+          "2001: A Space Odyssey"
+        ],
+        "correct_answer": "Alien"
+      }
+    ],
+    "know_more": "Jean Giraud was a French artist and writer who transformed the world of comics under two identities. As 'Giraud,' he drew the highly realistic Western series Blueberry. As 'Mœbius,' he created surreal, imaginative science-fiction and fantasy worlds that revolutionized the medium. His visionary work has had a profound influence on filmmakers, video game designers, and artists worldwide."
+  },
+  {
+    "name": "Constance Guisset",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Constance Guisset is a contemporary French designer whose work often focuses on creating a sense of what?",
+        "answers": [
+          "Heaviness and permanence",
+          "Movement, lightness, and illusion",
+          "Industrial rigidity",
+          "Historical nostalgia"
+        ],
+        "correct_answer": "Movement, lightness, and illusion"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is the name of her most celebrated design, a large, lightweight suspension lamp that sways in the breeze?",
+        "answers": [
+          "Aria Lamp",
+          "Vertigo Lamp",
+          "Feather Lamp",
+          "Zeppelin Lamp"
+        ],
+        "correct_answer": "Vertigo Lamp"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Before establishing her design studio, Constance Guisset pursued studies in which two different fields?",
+        "answers": [
+          "Medicine and Law",
+          "Engineering and Fine Art",
+          "History and Literature",
+          "Business (ESSEC) and Political Science (Sciences Po)"
+        ],
+        "correct_answer": "Business (ESSEC) and Political Science (Sciences Po)"
+      }
+    ],
+    "know_more": "Constance Guisset is a leading figure in contemporary French design. Her work, which spans product design, scenography, and interior architecture, is known for its ethereal and enchanting quality. Her iconic Vertigo lamp for Petite Friture is a global success, perfectly embodying her signature style of creating objects that are light, animated, and evoke a sense of wonder."
+  },
+  {
+    "name": "Issey Miyake",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Issey Miyake was a highly innovative and influential fashion designer from which country?",
+        "answers": [
+          "China",
+          "South Korea",
+          "Japan",
+          "Thailand"
+        ],
+        "correct_answer": "Japan"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is the name of Miyake's signature line of clothing, introduced in 1993, which is made from permanently micro-pleated polyester?",
+        "answers": [
+          "A-POC",
+          "Bao Bao",
+          "Pleats Please",
+          "132 5."
+        ],
+        "correct_answer": "Pleats Please"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Miyake was known for combining technology and fashion. His 'A-POC' line stands for 'A Piece of Cloth' and uses a computer-controlled process to create clothing from what?",
+        "answers": [
+          "A single, continuous tube of fabric",
+          "Recycled plastic bottles",
+          "Laser-cut leather panels",
+          "3D-printed polymers"
+        ],
+        "correct_answer": "A single, continuous tube of fabric"
+      }
+    ],
+    "know_more": "Issey Miyake was a Japanese fashion designer revered for his technology-driven apparel that blended Eastern and Western aesthetics. He was famous for his innovative use of pleating in his 'Pleats Please' line and his groundbreaking 'A-POC' (A Piece of Cloth) concept, which created seamless garments from a single piece of fabric. His designs are celebrated for their comfort, functionality, and architectural beauty."
+  },
+  {
+    "name": "Roman Cieslewicz",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Roman Cieslewicz was a leading 20th-century graphic artist, famous for his powerful work in what medium?",
+        "answers": [
+          "Oil Painting",
+          "Stone Sculpture",
+          "Poster Design",
+          "Architectural Drawing"
+        ],
+        "correct_answer": "Poster Design"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Cieslewicz was a central figure in a highly acclaimed national design movement known as the...?",
+        "answers": [
+          "Swiss School of Graphic Design",
+          "Dutch Design movement",
+          "Polish School of Posters",
+          "Italian Futurism"
+        ],
+        "correct_answer": "Polish School of Posters"
+      },
+      {
+        "difficulty": "hard",
+        "question": "After emigrating from Poland to France, Cieslewicz became the art director for which influential fashion magazine?",
+        "answers": [
+          "Vogue Paris",
+          "Marie Claire",
+          "Elle",
+          "L'Officiel"
+        ],
+        "correct_answer": "Elle"
+      }
+    ],
+    "know_more": "Roman Cieslewicz was a Polish graphic artist and one of the masters of the Polish School of Posters. His work is characterized by its powerful visual impact, often using collage, surreal imagery, and bold typography to convey potent social and political messages. After moving to Paris, he continued a prolific career, notably serving as the art director for Elle magazine."
+  },
+  {
+    "name": "Patrick Jouin",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Patrick Jouin is a famous contemporary designer from which country?",
+        "answers": [
+          "Italy",
+          "Germany",
+          "France",
+          "Spain"
+        ],
+        "correct_answer": "France"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Jouin gained widespread public recognition for designing which iconic piece of Parisian street furniture?",
+        "answers": [
+          "The Morris columns",
+          "The Wallace fountains",
+          "The Vélib' self-service bicycle stations",
+          "The Guimard metro entrances"
+        ],
+        "correct_answer": "The Vélib' self-service bicycle stations"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Before starting his own agency, Patrick Jouin was a key designer in the studio of which other world-renowned French designer?",
+        "answers": [
+          "Jean Nouvel",
+          "Andrée Putman",
+          "Philippe Starck",
+          "Jean Prouvé"
+        ],
+        "correct_answer": "Philippe Starck"
+      }
+    ],
+    "know_more": "Patrick Jouin is a French designer celebrated for his work that spans industrial design, interior architecture, and scenography. His elegant and innovative style is seen in projects ranging from the public Vélib' bike stations in Paris to the luxurious interiors of Alain Ducasse's restaurants and product designs for brands like Cassina and Alessi."
+  },
+  {
+    "name": "Hubert Damisch",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Hubert Damisch was an influential French intellectual known for his writings in what field?",
+        "answers": [
+          "Literary Criticism",
+          "Political Science",
+          "Art History and Philosophy",
+          "Economics"
+        ],
+        "correct_answer": "Art History and Philosophy"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Damisch's highly influential book, 'The Origin of Perspective,' analyzes the symbolic and philosophical importance of what artistic innovation?",
+        "answers": [
+          "The use of chiaroscuro (light and shadow)",
+          "The invention of oil painting",
+          "The development of linear perspective",
+          "The creation of abstract art"
+        ],
+        "correct_answer": "The development of linear perspective"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Damisch was associated with the intellectual movement that applied principles from linguistics and psychoanalysis to other fields. What is this movement called?",
+        "answers": [
+          "Existentialism",
+          "Postmodernism",
+          "Structuralism",
+          "Romanticism"
+        ],
+        "correct_answer": "Structuralism"
+      }
+    ],
+    "know_more": "Hubert Damisch was a French philosopher and art historian who was a leading figure in structuralist thought. He was known for applying concepts from psychoanalysis and semiotics to the analysis of art and architecture. His seminal work, 'The Origin of Perspective,' is a foundational text in the modern study of art history."
+  },
+  {
+    "name": "Julie Doucet",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Julie Doucet is a celebrated Canadian artist known for her influential work in which medium?",
+        "answers": [
+          "Large-scale oil painting",
+          "Bronze sculpture",
+          "Underground comics (comix)",
+          "Architectural photography"
+        ],
+        "correct_answer": "Underground comics (comix)"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is the name of Doucet's most famous and acclaimed autobiographical comic book series from the 1990s?",
+        "answers": [
+          "Love and Rockets",
+          "Ghost World",
+          "Dirty Plotte",
+          "Optic Nerve"
+        ],
+        "correct_answer": "Dirty Plotte"
+      },
+      {
+        "difficulty": "hard",
+        "question": "In 2022, Doucet received the most prestigious award in the world of comics for her lifetime achievement. What is this award?",
+        "answers": [
+          "The Pulitzer Prize for Editorial Cartooning",
+          "The Eisner Award for Best Writer/Artist",
+          "The Grand Prix de la ville d'Angoulême",
+          "The Harvey Award Hall of Fame"
+        ],
+        "correct_answer": "The Grand Prix de la ville d'Angoulême"
+      }
+    ],
+    "know_more": "Julie Doucet is a Canadian cartoonist and artist who was a pivotal figure in the alternative comics scene of the 1990s. Her groundbreaking series, 'Dirty Plotte,' is celebrated for its raw, surreal, and unapologetically feminist perspective. In 2022, she was awarded the Grand Prix at Angoulême, one of the highest honors in comics."
+  },
+  {
+    "name": "Michael Thonet",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "German-Austrian cabinet maker Michael Thonet is famous for pioneering a method to bend what material?",
+        "answers": [
+          "Steel",
+          "Plastic",
+          "Wood",
+          "Glass"
+        ],
+        "correct_answer": "Wood"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is the name of Thonet's most iconic and widely produced piece of furniture, often called the 'chair of chairs'?",
+        "answers": [
+          "The Armchair No. 9",
+          "The Rocking Chair No. 10",
+          "The Chair No. 14 (or Bistro Chair)",
+          "The Stool No. 18"
+        ],
+        "correct_answer": "The Chair No. 14 (or Bistro Chair)"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Thonet's innovation was revolutionary because it allowed for what major shift in the furniture industry?",
+        "answers": [
+          "The creation of custom, one-of-a-kind pieces",
+          "The industrial mass-production of furniture",
+          "The exclusive use of rare tropical woods",
+          "The revival of medieval carving techniques"
+        ],
+        "correct_answer": "The industrial mass-production of furniture"
+      }
+    ],
+    "know_more": "Michael Thonet was a 19th-century German-Austrian cabinet maker who invented and perfected the process of bending solid wood with steam. This innovation allowed him to create elegant, lightweight, and durable furniture, most famously the 'Chair No. 14.' His work revolutionized the furniture industry by making design accessible through mass production."
+  },
+  {
+    "name": "Andy Warhol",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Andy Warhol was the leading figure in which 20th-century art movement?",
+        "answers": [
+          "Abstract Expressionism",
+          "Cubism",
+          "Surrealism",
+          "Pop Art"
+        ],
+        "correct_answer": "Pop Art"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Warhol's famous New York City studio, a hub for artists, musicians, and celebrities, was known by what name?",
+        "answers": [
+          "The Garage",
+          "The Factory",
+          "The Loft",
+          "The Bunker"
+        ],
+        "correct_answer": "The Factory"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Which of these everyday items did Warhol famously elevate to the status of high art through his screenprints?",
+        "answers": [
+          "Coca-Cola Bottles",
+          "Campbell's Soup Cans",
+          "Brillo Boxes",
+          "All of the above"
+        ],
+        "correct_answer": "All of the above"
+      }
+    ],
+    "know_more": "Andy Warhol was an American artist, director, and producer who was a central figure in the Pop Art movement. He challenged traditional art concepts by using mass-production techniques like screenprinting to depict subjects from popular culture and advertising, such as Campbell's Soup Cans and celebrity portraits. His studio, The Factory, became an iconic cultural landmark."
+  },
+  {
+    "name": "Walter Gropius",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Walter Gropius was a German architect best known for founding which highly influential art school?",
+        "answers": [
+          "The Black Mountain College",
+          "The Bauhaus",
+          "The Cranbrook Academy of Art",
+          "The Ulm School of Design"
+        ],
+        "correct_answer": "The Bauhaus"
+      },
+      {
+        "difficulty": "medium",
+        "question": "The Bauhaus school's philosophy was centered on unifying what two concepts?",
+        "answers": [
+          "Art and Religion",
+          "Art and Politics",
+          "Art and Nature",
+          "Art and Technology (or Craft and Industry)"
+        ],
+        "correct_answer": "Art and Technology (or Craft and Industry)"
+      },
+      {
+        "difficulty": "hard",
+        "question": "After immigrating to the United States, Gropius taught at which university and founded a collaborative architectural firm known as TAC?",
+        "answers": [
+          "Yale University",
+          "Columbia University",
+          "Harvard University",
+          "Illinois Institute of Technology"
+        ],
+        "correct_answer": "Harvard University"
+      }
+    ],
+    "know_more": "Walter Gropius was a pioneering German architect and a master of modernism. He is most famous for founding the Bauhaus in 1919, a revolutionary art school that sought to bridge the gap between art, craft, and industrial mass-production. The school's 'form follows function' ethos has had a lasting and profound impact on modern art, design, and architecture worldwide."
+  },
+  {
+    "name": "Patricia Urquiola",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Patricia Urquiola is a world-renowned contemporary architect and product designer originally from which country?",
+        "answers": [
+          "Italy",
+          "Spain",
+          "Brazil",
+          "Portugal"
+        ],
+        "correct_answer": "Spain"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Since 2015, Urquiola has held the prestigious position of Art Director for which leading Italian furniture company?",
+        "answers": [
+          "B&B Italia",
+          "Moroso",
+          "Kartell",
+          "Cassina"
+        ],
+        "correct_answer": "Cassina"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Urquiola's work is known for its blend of playfulness and functionality. Which legendary Italian designer was her mentor and supervisor at the beginning of her career?",
+        "answers": [
+          "Ettore Sottsass",
+          "Joe Colombo",
+          "Achille Castiglioni",
+          "Vico Magistretti"
+        ],
+        "correct_answer": "Achille Castiglioni"
+      }
+    ],
+    "know_more": "Patricia Urquiola is a Spanish architect and designer based in Milan, Italy. She is one of the most influential figures in contemporary design, known for her eclectic, playful, and innovative approach. She has designed celebrated products for dozens of major brands and serves as the Art Director for Cassina, bringing a fresh and humanistic vision to modern design."
+  },
+  {
+    "name": "Paul Rand",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Paul Rand was a preeminent American artist best known for his work in what field?",
+        "answers": [
+          "Portrait Painting",
+          "Architectural Photography",
+          "Graphic Design and Corporate Identity",
+          "Abstract Sculpture"
+        ],
+        "correct_answer": "Graphic Design and Corporate Identity"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Which of these iconic, long-lasting corporate logos was designed by Paul Rand?",
+        "answers": [
+          "The Apple logo",
+          "The Nike 'swoosh'",
+          "The IBM logo",
+          "The Coca-Cola script"
+        ],
+        "correct_answer": "The IBM logo"
+      },
+      {
+        "difficulty": "hard",
+        "question": "In addition to IBM, Rand created memorable logos for a television network and a package delivery service. What are they?",
+        "answers": [
+          "CBS and FedEx",
+          "NBC and DHL",
+          "ABC and UPS",
+          "CNN and Purolator"
+        ],
+        "correct_answer": "ABC and UPS"
+      }
+    ],
+    "know_more": "Paul Rand was an American art director and graphic designer, best known for his corporate logo designs that became enduring symbols of American business. His work for companies like IBM, UPS, ABC, and NeXT helped to establish the power of corporate identity. He was a key figure in introducing the Swiss Style of graphic design to the United States."
+  },
+  {
+    "name": "Greta Grossman",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Greta Grossman was a Swedish-American designer and architect famous for her iconic 'Gräshoppa' lamp, which is named after what?",
+        "answers": [
+          "A bird",
+          "A flower",
+          "An insect (Grasshopper)",
+          "A car"
+        ],
+        "correct_answer": "An insect (Grasshopper)"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Grossman was a prominent figure in which design movement that flourished in the mid-20th century?",
+        "answers": [
+          "Art Deco",
+          "Bauhaus",
+          "Mid-Century Modernism",
+          "Postmodernism"
+        ],
+        "correct_answer": "Mid-Century Modernism"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Grossman's other famous lamp design is a floor lamp with a flexible neck that resembles a striking snake. What is it called?",
+        "answers": [
+          "The Viper Lamp",
+          "The Cobra Lamp",
+          "The Python Lamp",
+          "The Mamba Lamp"
+        ],
+        "correct_answer": "The Cobra Lamp"
+      }
+    ],
+    "know_more": "Greta Grossman was a Swedish designer and architect and a key figure in the Mid-Century Modern movement. After moving to California, she gained fame for her industrial-influenced lighting and furniture. Her most iconic designs, the 'Gräshoppa' (Grasshopper) and 'Cobra' floor lamps, are celebrated for their elegant, asymmetrical, and functional forms."
+  },
+  {
+    "name": "Catherine Zask",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Catherine Zask is a highly respected contemporary graphic designer from which country?",
+        "answers": [
+          "Belgium",
+          "Switzerland",
+          "Canada",
+          "France"
+        ],
+        "correct_answer": "France"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Zask's work is particularly known for its expressive and experimental approach to what core element of graphic design?",
+        "answers": [
+          "Photography",
+          "Illustration",
+          "Typography and lettering",
+          "Color theory"
+        ],
+        "correct_answer": "Typography and lettering"
+      },
+      {
+        "difficulty": "hard",
+        "question": "What is the name of the experimental typographic and musical notation system Zask developed during her residency at the Villa Medici in Rome?",
+        "answers": [
+          "Typographia",
+          "Scriptura",
+          "Alfabetempo",
+          "Littera"
+        ],
+        "correct_answer": "Alfabetempo"
+      }
+    ],
+    "know_more": "Catherine Zask is a French graphic designer known for her innovative and artistic work, primarily for cultural institutions like theaters, museums, and universities. Her style is characterized by a deep exploration of typography, where letters become dynamic, expressive, and almost pictorial elements, blurring the line between text and image."
+  },
+  {
+    "name": "Saul Bass",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Saul Bass was a legendary American graphic designer, most famous for his work in what area of filmmaking?",
+        "answers": [
+          "Costume Design",
+          "Sound Editing",
+          "Movie Posters and Title Sequences",
+          "Special Effects"
+        ],
+        "correct_answer": "Movie Posters and Title Sequences"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Bass created the iconic, disorienting title sequence for which Alfred Hitchcock psychological thriller?",
+        "answers": [
+          "Rear Window",
+          "The Birds",
+          "Vertigo",
+          "Rebecca"
+        ],
+        "correct_answer": "Vertigo"
+      },
+      {
+        "difficulty": "hard",
+        "question": "In addition to his design work, Saul Bass directed a science-fiction film that has since become a cult classic. What is its title?",
+        "answers": [
+          "Silent Running",
+          "Logan's Run",
+          "Phase IV",
+          "The Andromeda Strain"
+        ],
+        "correct_answer": "Phase IV"
+      }
+    ],
+    "know_more": "Saul Bass was an American graphic designer and Oscar-winning filmmaker, best known for his design of motion picture title sequences, film posters, and corporate logos. He transformed the movie title sequence into an art form, creating memorable introductions for films by Alfred Hitchcock, Stanley Kubrick, and Martin Scorsese."
+  },
+  {
+    "name": "Nuccio Bertone",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Giuseppe 'Nuccio' Bertone was the head of the famous Italian design house Bertone, which is primarily associated with what industry?",
+        "answers": [
+          "Furniture Design",
+          "Fashion",
+          "Automobile Design",
+          "Consumer Electronics"
+        ],
+        "correct_answer": "Automobile Design"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Bertone is credited with styling which iconic, wedge-shaped supercar, a masterpiece designed by Marcello Gandini under his leadership?",
+        "answers": [
+          "Ferrari F40",
+          "Lamborghini Countach",
+          "Porsche 911",
+          "Maserati Bora"
+        ],
+        "correct_answer": "Lamborghini Countach"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Which of these groundbreaking concept cars, known for its extreme 'Wedge' design, was presented by Bertone in 1970?",
+        "answers": [
+          "Ferrari Modulo",
+          "Maserati Boomerang",
+          "Lancia Stratos Zero",
+          "Alfa Romeo Carabo"
+        ],
+        "correct_answer": "Lancia Stratos Zero"
+      }
+    ],
+    "know_more": "Nuccio Bertone took over his father's coachbuilding company, Carrozzeria Bertone, and transformed it into a world-renowned design powerhouse. Under his leadership, the firm styled some of the most iconic sports cars in history, including the Lamborghini Miura and Countach, and the Lancia Stratos, defining the look of an entire automotive era."
+  },
+  {
+    "name": "Eileen Gray",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Eileen Gray was a pioneering Irish architect and designer, and a leading figure in what art movement?",
+        "answers": [
+          "Art Nouveau",
+          "The Modern Movement",
+          "Victorian",
+          "Postmodernism"
+        ],
+        "correct_answer": "The Modern Movement"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is the name of her most famous piece of furniture, an adjustable circular glass and tubular steel table?",
+        "answers": [
+          "The Bibendum Chair",
+          "The Transat Chair",
+          "The E-1027 Table",
+          "The Lota Sofa"
+        ],
+        "correct_answer": "The E-1027 Table"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Before gaining fame for her modernist furniture, Gray was a leading designer in Paris known for her exquisite work with what material?",
+        "answers": [
+          "Bentwood",
+          "Lacquered screens",
+          "Molded plastic",
+          "Cast iron"
+        ],
+        "correct_answer": "Lacquered screens"
+      }
+    ],
+    "know_more": "Eileen Gray was an Irish architect and furniture designer who was a pioneer of the Modern Movement. Initially a master of the art of lacquer, she evolved to create revolutionary tubular steel furniture, including the iconic E-1027 adjustable table. Her architectural masterpiece, the villa E-1027 in the south of France, is a landmark of modernist design."
+  },
+  {
+    "name": "Ruedi Baur",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Ruedi Baur is a Franco-Swiss designer primarily known for his work in what field?",
+        "answers": [
+          "Fashion Design",
+          "Automotive Design",
+          "Graphic Design and Signage Systems",
+          "Furniture Design"
+        ],
+        "correct_answer": "Graphic Design and Signage Systems"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Baur and his studio are famous for creating the comprehensive visual identity and wayfinding system for which major Parisian cultural institution?",
+        "answers": [
+          "The Louvre Museum",
+          "The Centre Pompidou",
+          "The Eiffel Tower",
+          "The Musée d'Orsay"
+        ],
+        "correct_answer": "The Centre Pompidou"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Ruedi Baur's work often challenges the conventional separation of design disciplines. He focuses on creating systems for identification, orientation, and what other key function in public spaces?",
+        "answers": [
+          "Entertainment",
+          "Security",
+          "Information",
+          "Sales"
+        ],
+        "correct_answer": "Information"
+      }
+    ],
+    "know_more": "Ruedi Baur is a Franco-Swiss graphic designer renowned for his work in corporate identity, signage systems, and information design for public spaces. His projects, such as the visual identity for the Centre Pompidou in Paris, are characterized by a deep consideration of context, architecture, and the user's experience."
+  },
+  {
+    "name": "Norman Bel Geddes",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Norman Bel Geddes was an American designer who was a key figure in popularizing what aesthetic style in the 1930s and 40s?",
+        "answers": [
+          "Art Nouveau",
+          "Victorian",
+          "Streamline Moderne",
+          "Minimalism"
+        ],
+        "correct_answer": "Streamline Moderne"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What was the name of Bel Geddes's most famous creation, a spectacular and wildly popular exhibit at the 1939 New York World's Fair?",
+        "answers": [
+          "Democracity",
+          "The World of Tomorrow",
+          "Futurama",
+          "Metropolis II"
+        ],
+        "correct_answer": "Futurama"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Before his industrial design career, Bel Geddes was a highly innovative and influential designer for what?",
+        "answers": [
+          "Automobiles",
+          "Theatrical sets and stages",
+          "Fashion and textiles",
+          "Residential homes"
+        ],
+        "correct_answer": "Theatrical sets and stages"
+      }
+    ],
+    "know_more": "Norman Bel Geddes was an American theatrical and industrial designer who was a pioneer of the Streamline Moderne style. A visionary futurist, his most famous project was the 'Futurama' exhibit for General Motors at the 1939 World's Fair, which presented a spellbinding vision of America's future cities and highways and was seen by millions."
+  },
+  {
+    "name": "Ada Lovelace",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Ada Lovelace, an English mathematician, is often regarded as the world's first what?",
+        "answers": [
+          "Female physician",
+          "Professional astronomer",
+          "Computer programmer",
+          "University professor"
+        ],
+        "correct_answer": "Computer programmer"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Lovelace wrote her extensive notes and algorithms for a theoretical machine conceived by which famous inventor?",
+        "answers": [
+          "Isaac Newton",
+          "Charles Babbage",
+          "Alan Turing",
+          "Leonardo da Vinci"
+        ],
+        "correct_answer": "Charles Babbage"
+      },
+      {
+        "difficulty": "hard",
+        "question": "What was the name of the proposed mechanical general-purpose computer for which Lovelace wrote her visionary notes?",
+        "answers": [
+          "The Difference Engine",
+          "The Colossus",
+          "The Manchester Mark 1",
+          "The Analytical Engine"
+        ],
+        "correct_answer": "The Analytical Engine"
+      }
+    ],
+    "know_more": "Ada Lovelace was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognize that the machine had applications beyond pure calculation and published the first algorithm intended to be carried out by such a machine, earning her the title of the first computer programmer."
+  },
+  {
+    "name": "Lucienne Day",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Lucienne Day was one of the most influential British designers of the post-war era, specializing in what field?",
+        "answers": [
+          "Automobile Design",
+          "Graphic Design",
+          "Textile Design",
+          "Computer Science"
+        ],
+        "correct_answer": "Textile Design"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is the name of Day's most famous and iconic pattern, which was launched at the 1951 Festival of Britain?",
+        "answers": [
+          "Dandelion Clocks",
+          "Acanthus",
+          "Calyx",
+          "Herb Antony"
+        ],
+        "correct_answer": "Calyx"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Lucienne Day's abstract patterns were inspired by modern art and science. She was married to a famous designer in another field. What was his profession?",
+        "answers": [
+          "A car designer",
+          "A graphic designer",
+          "A furniture designer",
+          "An architect"
+        ],
+        "correct_answer": "A furniture designer (Robin Day)"
+      }
+    ],
+    "know_more": "Lucienne Day was a British designer who became a household name in the 1950s for her vibrant and abstract textile designs. Her groundbreaking pattern 'Calyx' for the Festival of Britain in 1951 challenged traditional floral prints and helped define the look of the Mid-Century Modern era in Britain. She and her husband, furniture designer Robin Day, were a celebrated design power couple."
+  },
+  {
+    "name": "Florence Deygas & Olivier Kuntzel",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "The creative duo Kuntzel+Deygas are most famous for creating the stylish, retro-inspired animated title sequence for which Steven Spielberg film?",
+        "answers": [
+          "Jurassic Park",
+          "Schindler's List",
+          "Catch Me If You Can",
+          "E.T. the Extra-Terrestrial"
+        ],
+        "correct_answer": "Catch Me If You Can"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Before their film work, Florence Deygas and Olivier Kuntzel were successful illustrators in what field?",
+        "answers": [
+          "Children's books",
+          "Scientific journals",
+          "Fashion",
+          "Architectural rendering"
+        ],
+        "correct_answer": "Fashion"
+      },
+      {
+        "difficulty": "hard",
+        "question": "For which luxury brand did Kuntzel+Deygas create the memorable animated silhouette character for the 'La Petite Robe Noire' fragrance campaign?",
+        "answers": [
+          "Chanel",
+          "Dior",
+          "Guerlain",
+          "Yves Saint Laurent"
+        ],
+        "correct_answer": "Guerlain"
+      }
+    ],
+    "know_more": "Olivier Kuntzel and Florence Deygas are a French creative duo known for their distinctive and elegant visual style. They gained international fame for their animated title sequence for the film 'Catch Me If You Can.' Their work spans across film, advertising, design, and illustration, always marked by a sense of narrative poetry and sophisticated charm."
+  },
+  {
+    "name": "Linus Torvalds",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Linus Torvalds is the creator and principal developer of which famous open-source operating system kernel?",
+        "answers": [
+          "Windows NT",
+          "macOS",
+          "Linux",
+          "FreeBSD"
+        ],
+        "correct_answer": "Linux"
+      },
+      {
+        "difficulty": "medium",
+        "question": "In addition to the Linux kernel, Torvalds also created another hugely important piece of software used by millions of developers worldwide. What is it?",
+        "answers": [
+          "The Apache Web Server",
+          "The Python programming language",
+          "The Git version control system",
+          "The MySQL database"
+        ],
+        "correct_answer": "The Git version control system"
+      },
+      {
+        "difficulty": "hard",
+        "question": "What was the name of the simple, Unix-like operating system that Torvalds was studying, which inspired him to write his own kernel from scratch?",
+        "answers": [
+          "MS-DOS",
+          "Xenix",
+          "Ultrix",
+          "Minix"
+        ],
+        "correct_answer": "Minix"
+      }
+    ],
+    "know_more": "Linus Torvalds is a Finnish-American software engineer who is the creator and lead developer of the Linux kernel, the core component of the Linux operating system. His work, which he started as a personal project, became the foundation for one of the most widespread open-source software projects in history. He also created Git, the world's most popular version control system."
+  },
+  {
+    "name": "Raymond Loewy",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "French-American designer Raymond Loewy is widely regarded as 'The Father' of what design field?",
+        "answers": [
+          "Graphic Design",
+          "Fashion Design",
+          "Industrial Design",
+          "Interior Design"
+        ],
+        "correct_answer": "Industrial Design"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Which of these iconic American corporate logos was designed by Raymond Loewy's firm?",
+        "answers": [
+          "The Ford oval",
+          "The Coca-Cola script",
+          "The Shell pecten",
+          "The Apple apple"
+        ],
+        "correct_answer": "The Shell pecten"
+      },
+      {
+        "difficulty": "hard",
+        "question": "In the 1970s, Loewy was hired by NASA to improve the habitability of their spacecraft. What was this project?",
+        "answers": [
+          "The Apollo Lunar Module",
+          "The Mercury Capsule",
+          "The Skylab space station",
+          "The Space Shuttle"
+        ],
+        "correct_answer": "The Skylab space station"
+      }
+    ],
+    "know_more": "Raymond Loewy was a French-American industrial designer who revolutionized the field with his philosophy of streamlining. His firm was responsible for some of the most recognizable designs of the 20th century, from the Shell and Exxon logos to the Studebaker Avanti car, the Coca-Cola bottle redesign, and the interior of the Skylab space station."
+  },
+  {
+    "name": "Gérard Caron",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Gérard Caron was a pioneering French designer and a co-founder of one of the first major branding and design agencies in France. What was it called?",
+        "answers": [
+          "Publicis",
+          "Dragon Rouge",
+          "Carré Noir",
+          "Grapus"
+        ],
+        "correct_answer": "Carré Noir"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Caron is considered a key figure in establishing what professional discipline in France?",
+        "answers": [
+          "Industrial Design",
+          "Corporate Identity / Branding",
+          "Motion Graphics",
+          "Ergonomics"
+        ],
+        "correct_answer": "Corporate Identity / Branding"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Which of these logos for a major French retailer, featuring a distinctive 'lozenge' shape, was an early and famous creation of Caron's agency?",
+        "answers": [
+          "Carrefour",
+          "Auchan",
+          "Leclerc",
+          "Monoprix"
+        ],
+        "correct_answer": "Carrefour"
+      }
+    ],
+    "know_more": "Gérard Caron was a French designer who is considered one of the fathers of corporate identity and branding in France. In 1973, he co-founded Carré Noir, the country's first major marketing design agency, which created iconic logos and visual identities for numerous major French and international companies, profoundly shaping the visual landscape of French commerce."
+  },
+  {
+    "name": "Tim Brown",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Tim Brown is the executive chair and former CEO of which world-renowned design and innovation consultancy?",
+        "answers": [
+          "Pentagram",
+          "Frog Design",
+          "IDEO",
+          "Wolff Olins"
+        ],
+        "correct_answer": "IDEO"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Brown is a leading global advocate for a methodology that uses a designer's sensibility to solve complex problems. What is this methodology called?",
+        "answers": [
+          "Agile Development",
+          "Six Sigma",
+          "Design Thinking",
+          "Lean Startup"
+        ],
+        "correct_answer": "Design Thinking"
+      },
+      {
+        "difficulty": "hard",
+        "question": "What is the title of Tim Brown's influential book that explains how design thinking can transform organizations and inspire innovation?",
+        "answers": [
+          "The Design of Everyday Things",
+          "Change by Design",
+          "Creative Confidence",
+          "Don't Make Me Think"
+        ],
+        "correct_answer": "Change by Design"
+      }
+    ],
+    "know_more": "Tim Brown is a British industrial designer and the executive chair of IDEO, a global design firm. He is a leading voice in the promotion of 'design thinking,' a human-centered approach to problem-solving and innovation. Through his work, writing, and speaking, he has helped spread the principles of design to a wide range of fields, including business, education, and the social sector."
+  },
+  {
+    "name": "Marije Vogelzang",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Dutch designer Marije Vogelzang is considered one of the pioneers and leading figures in what unique field of design?",
+        "answers": [
+          "Sound Design",
+          "Scent Design",
+          "Eating and Food Design",
+          "Lighting Design"
+        ],
+        "correct_answer": "Eating and Food Design"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is Vogelzang's core philosophy about her work?",
+        "answers": [
+          "Her designs are the recipes and the food itself.",
+          "Food is merely a material to make sculptures.",
+          "The design focus is not on the food, but on the act and experience of eating.",
+          "The primary goal is to make food look good for photography."
+        ],
+        "correct_answer": "The design focus is not on the food, but on the act and experience of eating."
+      },
+      {
+        "difficulty": "hard",
+        "question": "For a project exploring connections and intimacy, Vogelzang created a 'sharing dinner' where diners were connected by what object?",
+        "answers": [
+          "A single long fork",
+          "Interconnected blindfolds",
+          "A large, shared tablecloth that became part of their clothing",
+          "Headphones playing the same music"
+        ],
+        "correct_answer": "A large, shared tablecloth that became part of their clothing"
+      }
+    ],
+    "know_more": "Marije Vogelzang is a Dutch designer recognized as a pioneer in the field of 'eating design.' Her work moves beyond the plate to explore the social, cultural, and psychological aspects of food and consumption. She creates immersive experiences, workshops, and installations that use the act of eating to tell stories, foster connection, and provoke thought."
+  },
+  {
+    "name": "Peggy Whitson",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Peggy Whitson is a celebrated American biochemist and a former astronaut for which organization?",
+        "answers": [
+          "European Space Agency (ESA)",
+          "Roscosmos",
+          "SpaceX",
+          "NASA"
+        ],
+        "correct_answer": "NASA"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Among her many achievements, Peggy Whitson holds the record for being the first woman to do what?",
+        "answers": [
+          "Walk on the Moon",
+          "Command the International Space Station",
+          "Fly on the Space Shuttle",
+          "Perform a spacewalk"
+        ],
+        "correct_answer": "Command the International Space Station"
+      },
+      {
+        "difficulty": "hard",
+        "question": "As of her retirement from NASA, Peggy Whitson holds which significant US spaceflight record?",
+        "answers": [
+          "The longest single spaceflight",
+          "The most spacewalks by any astronaut",
+          "The most cumulative time spent in space by an American",
+          "The youngest American to go to space"
+        ],
+        "correct_answer": "The most cumulative time spent in space by an American"
+      }
+    ],
+    "know_more": "Peggy Whitson is a record-breaking American astronaut and biochemist. During her distinguished career at NASA, she became the first female commander of the International Space Station, accumulated more time in space than any other American (665 days), and holds the record for the most spacewalks by a woman. Her extensive experience has made her a pivotal figure in human space exploration."
+  },
+  {
+    "name": "Saskia Sassen",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Dutch-American sociologist Saskia Sassen is most famous for popularizing and analyzing what concept in urban studies?",
+        "answers": [
+          "The Megalopolis",
+          "The Garden City",
+          "The Global City",
+          "The Smart City"
+        ],
+        "correct_answer": "The Global City"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is the title of her highly influential 1991 book that identified New York, London, and Tokyo as command centers for the global economy?",
+        "answers": [
+          "Cities in a World Economy",
+          "The Global City",
+          "Metropolis",
+          "Globalisation and its Discontents"
+        ],
+        "correct_answer": "The Global City"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Sassen coined a term to describe the process whereby formerly domestic functions of the state are altered by engagement with global institutions. What is this term?",
+        "answers": [
+          "Re-regulation",
+          "The new internationalism",
+          "Denationalization",
+          "Global governance"
+        ],
+        "correct_answer": "Denationalization"
+      }
+    ],
+    "know_more": "Saskia Sassen is a Dutch-American sociologist renowned for her work on globalization and international migration. Her seminal book, 'The Global City,' introduced a framework for understanding how cities like New York, London, and Tokyo function as strategic command points in the global economy. Her theories have profoundly influenced the fields of urban planning, sociology, and globalization studies."
+  },
+  {
+    "name": "Jean Rouch",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Jean Rouch was a highly influential French filmmaker and anthropologist, regarded as a major pioneer of which documentary film movement?",
+        "answers": [
+          "Direct Cinema",
+          "Cinéma Vérité",
+          "Poetic Realism",
+          "French New Wave"
+        ],
+        "correct_answer": "Cinéma Vérité"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is the title of Rouch's most famous film, co-directed with Edgar Morin, which captures the lives of Parisians during the summer of 1960?",
+        "answers": [
+          "Moi, un Noir (I, a Black)",
+          "Les Maîtres Fous (The Mad Masters)",
+          "Chronique d'un été (Chronicle of a Summer)",
+          "La Chasse au lion à l'arc (The Lion Hunters)"
+        ],
+        "correct_answer": "Chronique d'un été (Chronicle of a Summer)"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Rouch developed a unique style that blended documentary with fiction, where the subjects of the film often participated in its creation. What did he call this concept?",
+        "answers": [
+          "Docudrama",
+          "Shared Anthropology or Ethnofiction",
+          "Immersive Cinema",
+          "Observational Film"
+        ],
+        "correct_answer": "Shared Anthropology or Ethnofiction"
+      }
+    ],
+    "know_more": "Jean Rouch was a French filmmaker and anthropologist whose work blurred the lines between documentary and fiction. He was a leading figure in the development of cinéma vérité, a style of filmmaking that emphasizes naturalism and the filmmaker's interaction with their subjects. His collaborative and provocative approach, which he termed 'shared anthropology,' had a profound influence on the French New Wave and documentary filmmaking worldwide."
+  },
+  {
+    "name": "Alain Findeli",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Alain Findeli is a prominent French-Canadian academic and theorist in what field?",
+        "answers": [
+          "Film Studies",
+          "Literary Criticism",
+          "Design Research and Theory",
+          "Computer Science"
+        ],
+        "correct_answer": "Design Research and Theory"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Findeli's research and teaching are deeply influenced by the heritage of which legendary German design school?",
+        "answers": [
+          "The Bauhaus",
+          "The Bezalel Academy",
+          "The Ulm School of Design",
+          "The Vkhutemas"
+        ],
+        "correct_answer": "The Ulm School of Design"
+      },
+      {
+        "difficulty": "hard",
+        "question": "Findeli is a strong advocate for what kind of approach to design, which considers the ethical, social, and philosophical dimensions of the practice?",
+        "answers": [
+          "A purely aesthetic approach",
+          "A market-driven approach",
+          "A humanistic and critical approach",
+          "A technology-centered approach"
+        ],
+        "correct_answer": "A humanistic and critical approach"
+      }
+    ],
+    "know_more": "Alain Findeli is a French-Canadian professor and theorist who is a leading voice in design research and education. Deeply influenced by the pedagogical and theoretical heritage of the Ulm School of Design, he advocates for a humanistic and ethically-grounded approach to the practice. His work explores the philosophy of design and seeks to build a solid intellectual foundation for it as a formal discipline."
+  },
+  {
+    "name": "Cynthia Fleury",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Cynthia Fleury is a prominent contemporary public intellectual in France, known for her work as a what?",
+        "answers": [
+          "Novelist",
+          "Physicist",
+          "Philosopher and Psychoanalyst",
+          "Visual Artist"
+        ],
+        "correct_answer": "Philosopher and Psychoanalyst"
+      },
+      {
+        "difficulty": "medium",
+        "question": "Much of Fleury's recent and influential work focuses on the ethical and political importance of what concept in society?",
+        "answers": [
+          "Profit",
+          "Power",
+          "Care ('le soin')",
+          "Growth"
+        ],
+        "correct_answer": "Care ('le soin')"
+      },
+      {
+        "difficulty": "hard",
+        "question": "What is the title of Cynthia Fleury's acclaimed 2010 book which examines the decline of a key virtue in modern democratic life?",
+        "answers": [
+          "Les Irremplaçables (The Irreplaceables)",
+          "La Fin du courage (The End of Courage)",
+          "Le Soin est un humanisme (Care is a Humanism)",
+          "Les Pathologies de la démocratie (The Pathologies of Democracy)"
+        ],
+        "correct_answer": "La Fin du courage (The End of Courage)"
+      }
+    ],
+    "know_more": "Cynthia Fleury is a French philosopher and psychoanalyst who is a significant voice in contemporary European thought. Her work bridges philosophy with pressing social and political issues, exploring topics such as democracy, individualism, and the ethics of care. She is a prolific author and a public intellectual who frequently contributes to debates on politics, health, and society."
+  },
+  {
+    "name": "Ivan Sutherland",
+    "quiz": [
+      {
+        "difficulty": "easy",
+        "question": "Ivan Sutherland is a pioneering American computer scientist widely regarded as the 'father' of what field?",
+        "answers": [
+          "The Internet",
+          "Artificial Intelligence",
+          "Computer Graphics",
+          "Personal Computing"
+        ],
+        "correct_answer": "Computer Graphics"
+      },
+      {
+        "difficulty": "medium",
+        "question": "What was the name of the groundbreaking computer program Sutherland created in 1963, which allowed users to draw and manipulate shapes directly on a screen?",
+        "answers": [
+          "MacPaint",
+          "CorelDRAW",
+          "Sketchpad",
+          "AutoCAD"
+        ],
+        "correct_answer": "Sketchpad"
+      },
+      {
+        "difficulty": "hard",
+        "question": "In 1968, Sutherland created the first-ever head-mounted display, a crucial invention for the development of what technology?",
+        "answers": [
+          "Mobile phones",
+          "Laptop computers",
+          "Virtual and Augmented Reality",
+          "Digital cameras"
+        ],
+        "correct_answer": "Virtual and Augmented Reality"
+      }
+    ],
+    "know_more": "Ivan Sutherland is a towering figure in computer science, celebrated as the 'Father of Computer Graphics.' His 1963 PhD thesis introduced 'Sketchpad,' a revolutionary program that established the foundations for modern computer-aided design (CAD) and graphical user interfaces (GUIs). He also created the first head-mounted display, laying the groundwork for virtual and augmented reality."
+  }
+]

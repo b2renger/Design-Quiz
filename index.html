@@ -10,38 +10,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button id="home-btn" data-translate-key="home">Home</button>
     <main id="app-container">
         <header>
             <h1 data-translate-key="quizTitle">The Design & Innovation Quiz</h1>
-            <p id="score-display" class="hidden"><span data-translate-key="scoreText">Score</span>: <span id="score">0</span></p>
+            <div id="game-stats">
+                 <p id="score-display"><span data-translate-key="scoreText">Score</span>: <span id="score">0</span></p>
+                 <p id="streak-display"><span data-translate-key="streakText">Streak</span> 🔥 <span id="streak-count">0</span>x</p>
+                 <p id="timer-display"><span data-translate-key="timerText">Time</span>: <span id="time">30</span></p>
+            </div>
         </header>
 
         <section id="language-selection" class="card">
             <h2>Select Language / Choisissez la langue</h2>
             <div id="language-buttons">
-                <button id="en-btn">English</button>
-                <button id="fr-btn">Français</button>
+                <button id="en-btn" aria-label="Select English">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="100" height="50">
+                        <clipPath id="s">
+                            <path d="M0,0 v30 h60 v-30 z"/>
+                        </clipPath>
+                        <clipPath id="t">
+                            <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/>
+                        </clipPath>
+                        <g clip-path="url(#s)">
+                            <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                            <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/>
+                            <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                        </g>
+                    </svg>
+                </button>
+                <button id="fr-btn" aria-label="Sélectionner Français">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="75" height="50">
+                        <rect fill="#002395" width="300" height="600"/>
+                        <rect x="300" fill="#fff" width="300" height="600"/>
+                        <rect x="600" fill="#ED2939" width="300" height="600"/>
+                    </svg>
+                </button>
             </div>
         </section>
 
-        <section id="start-screen" class="card hidden">
+        <section id="start-screen" class="card">
             <h2 data-translate-key="startTitle">Test Your Knowledge!</h2>
             <p data-translate-key="startDescription">Select a difficulty to begin the quiz about the pioneers of design, art, and technology.</p>
             <div id="difficulty-selection">
-                <button id="easy-btn" class="difficulty-btn" data-translate-key="easy">Easy</button>
-                <button id="medium-btn" class="difficulty-btn" data-translate-key="medium">Medium</button>
-                <button id="hard-btn" class="difficulty-btn" data-translate-key="hard">Hard</button>
+                <button id="easy-btn" class="difficulty-btn" data-difficulty="Easy" data-translate-key="easy">Easy</button>
+                <button id="medium-btn" class="difficulty-btn" data-difficulty="Medium" data-translate-key="medium">Medium</button>
+                <button id="hard-btn" class="difficulty-btn" data-difficulty="Hard" data-translate-key="hard">Hard</button>
             </div>
         </section>
 
-        <section id="question-screen" class="card hidden">
+        <section id="game-mode-screen" class="card">
+            <h2 data-translate-key="gameModeTitle">Choose a Game Mode</h2>
+            <div id="game-mode-selection" class="btn-grid">
+                <button id="ten-questions-btn" data-translate-key="tenQuestions">10 Questions</button>
+                <button id="time-attack-btn" data-translate-key="timeAttack">Time Attack (30s)</button>
+            </div>
+        </section>
+
+        <section id="question-screen" class="card">
             <h2 id="question-text"></h2>
             <div id="answer-buttons" class="btn-grid">
                 <!-- Answer buttons will be generated here -->
             </div>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
         </section>
 
-        <section id="result-screen" class="card hidden">
+        <section id="result-screen" class="card">
             <h2 id="result-message" aria-live="polite"></h2>
             <p id="correct-answer-text"></p>
             <div id="bio-container">
@@ -51,6 +89,18 @@
             </div>
             <button id="next-btn" data-translate-key="nextQuestion">Next Question</button>
         </section>
+
+        <section id="end-screen" class="card">
+            <h2 id="final-score-text"></h2>
+            <div id="end-stats-container">
+                <p id="correct-answers-display" class="end-stat"></p>
+                <p id="longest-streak-display" class="end-stat"></p>
+                <p id="questions-answered-display" class="end-stat"></p>
+                <p id="accuracy-display" class="end-stat"></p>
+            </div>
+            <p id="end-message-text"></p>
+        </section>
+
     </main>
     <script type="module" src="index.js"></script>
 </body>
