@@ -354,6 +354,27 @@ button {
     transition: width 0.4s ease-in-out;
 }
 
+#end-screen .animated-item {
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+#end-screen.visible .animated-item {
+    animation: pop-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+#end-screen.visible #final-score-text {
+    animation-delay: 0.2s;
+}
+
+#end-screen.visible #end-stats-container {
+    animation-delay: 0.4s;
+}
+
+#end-screen.visible #end-message-text {
+    animation-delay: 0.6s;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -376,6 +397,17 @@ button {
     100% {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
     }
 }
 

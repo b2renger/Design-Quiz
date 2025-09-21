@@ -433,6 +433,8 @@ function endGame() {
     }
     
     endScreen.style.display = 'flex';
+    // Add class with a slight delay to trigger animations after display change
+    setTimeout(() => endScreen.classList.add('visible'), 50);
 }
 
 function goHome() {
@@ -448,6 +450,7 @@ function goHome() {
     accuracyDisplay.textContent = '';
     
     endScreen.style.display = 'none';
+    endScreen.classList.remove('visible'); // Remove class to reset animations
     gameModeScreen.style.display = 'none';
     questionScreen.style.display = 'none';
     resultScreen.style.display = 'none';
