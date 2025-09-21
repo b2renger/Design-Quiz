@@ -36,9 +36,15 @@ const translations = {
         longestStreakStat: "Longest Streak",
         questionsAnsweredStat: "Answered",
         accuracyStat: "Accuracy",
-        themeTitle: "Choose a Theme",
-        modeTitle: "Choose a Mode",
-        fontTitle: "Choose a Font",
+        customizeTitle: "Appearance",
+        leaderboardTitle: "Leaderboard",
+        newHighscoreTitle: "New High Score!",
+        enterNamePrompt: "Please enter your name for the leaderboard.",
+        submit: "Submit",
+        back: "Back",
+        noScores: "No scores yet. Be the first!",
+        startQuiz: "Start Quiz",
+        randomLabel: "Randomize all options",
     },
     fr: {
         quizTitle: "Le Quiz du Design et de l'Innovation",
@@ -72,21 +78,29 @@ const translations = {
         longestStreakStat: "Plus Longue Série",
         questionsAnsweredStat: "Répondues",
         accuracyStat: "Précision",
-        themeTitle: "Choisissez un Thème",
-        modeTitle: "Choisissez un Mode",
-        fontTitle: "Choisissez une Police",
+        customizeTitle: "Apparence",
+        leaderboardTitle: "Classement",
+        newHighscoreTitle: "Nouveau Record !",
+        enterNamePrompt: "Veuillez entrer votre nom pour le classement.",
+        submit: "Soumettre",
+        back: "Retour",
+        noScores: "Aucun score pour le moment. Soyez le premier !",
+        startQuiz: "Commencer",
+        randomLabel: "Tout choisir au hasard",
     }
 };
 
-// Screen elements
+// --- DOM ELEMENTS ---
+// Screens
 const languageSelection = document.getElementById('language-selection');
 const startScreen = document.getElementById('start-screen');
 const gameModeScreen = document.getElementById('game-mode-screen');
 const questionScreen = document.getElementById('question-screen');
 const resultScreen = document.getElementById('result-screen');
 const endScreen = document.getElementById('end-screen');
+const leaderboardScreen = document.getElementById('leaderboard-screen');
 
-// Button elements
+// Buttons
 const enBtn = document.getElementById('en-btn');
 const frBtn = document.getElementById('fr-btn');
 const themeButtons = document.querySelectorAll('.theme-btn');
@@ -98,8 +112,14 @@ const tenQuestionsBtn = document.getElementById('ten-questions-btn');
 const timeAttackBtn = document.getElementById('time-attack-btn');
 const nextBtn = document.getElementById('next-btn');
 const homeBtn = document.getElementById('home-btn');
+const leaderboardBtnHome = document.getElementById('leaderboard-btn-home');
+const leaderboardBtnEnd = document.getElementById('leaderboard-btn-end');
+const backBtn = document.getElementById('back-btn');
+const startQuizBtn = document.getElementById('start-quiz-btn');
+const randomAllBtn = document.getElementById('random-all-btn');
 
-// Display elements
+
+// Display & Interactive
 const gameStats = document.getElementById('game-stats');
 const scoreDisplay = document.getElementById('score-display');
 const timerDisplay = document.getElementById('timer-display');
@@ -122,8 +142,17 @@ const longestStreakDisplay = document.getElementById('longest-streak-display');
 const questionsAnsweredDisplay = document.getElementById('questions-answered-display');
 const accuracyDisplay = document.getElementById('accuracy-display');
 
+// Leaderboard Elements
+const leaderboardDifficultyBtns = document.querySelectorAll('#leaderboard-difficulty-selection .selector-btn');
+const leaderboardModeBtns = document.querySelectorAll('#leaderboard-mode-selection .selector-btn');
+const leaderboardList = document.getElementById('leaderboard-list');
 
-// State variables
+// High Score Prompt Elements
+const highscorePromptOverlay = document.getElementById('highscore-prompt-overlay');
+const highscoreForm = document.getElementById('highscore-form');
+const playerNameInput = document.getElementById('player-name-input');
+
+// --- STATE VARIABLES ---
 let shuffledQuestions = [];
 let currentQuestionIndex = 0;
 let score = 0;
@@ -135,14 +164,52 @@ let currentLanguage = 'en';
 let enQuizData = [];
 let frQuizData = [];
 let currentQuizData = [];
-let selectedDifficulty = '';
-let gameMode = ''; // '10q' or 'time'
+let selectedDifficulty = 'Easy';
+let gameMode = '10q';
 let timer;
 let timeLeft = 30;
 let isGameActive = false;
+let screenHistory = ['language-selection'];
+const LEADERBOARD_SIZE = 5;
 
+// --- LEADERBOARD LOGIC ---
+function getLeaderboardKey(difficulty, mode) {
+    return `leaderboard_${difficulty.toLowerCase()}_${mode}`;
+}
+
+function getLeaderboard(difficulty, mode) {
+    const key = getLeaderboardKey(difficulty, mode);
+    const board = localStorage.getItem(key);
+    return board ? JSON.parse(board) : [];
+}
+
+function saveLeaderboard(difficulty, mode, board) {
+    const key = getLeaderboardKey(difficulty, mode);
+    localStorage.setItem(key, JSON.stringify(board));
+}
+
+function addToLeaderboard(name, score, difficulty, mode) {
+    const board = getLeaderboard(difficulty, mode);
+    const newEntry = { name, score };
+    board.push(newEntry);
+    board.sort((a, b) => b.score - a.score);
+    const newBoard = board.slice(0, LEADERBOARD_SIZE);
+    saveLeaderboard(difficulty, mode, newBoard);
+}
+
+function isHighScore(score, difficulty, mode) {
+    const board = getLeaderboard(difficulty, mode);
+    if (board.length < LEADERBOARD_SIZE) {
+        return true;
+    }
+    const lowestScore = board[board.length - 1]?.score ?? 0;
+    return score > lowestScore;
+}
+
+
+// --- APPEARANCE & THEME ---
 function applyTheme(theme) {
-    document.body.dataset.theme = theme;
+    document.documentElement.dataset.theme = theme;
     localStorage.setItem('quizTheme', theme);
     themeButtons.forEach(btn => {
         btn.classList.toggle('active', btn.dataset.theme === theme);
@@ -150,7 +217,7 @@ function applyTheme(theme) {
 }
 
 function applyFont(font) {
-    document.body.dataset.font = font;
+    document.documentElement.dataset.font = font;
     localStorage.setItem('quizFont', font);
     fontButtons.forEach(btn => {
         btn.classList.toggle('active', btn.dataset.font === font);
@@ -158,10 +225,60 @@ function applyFont(font) {
 }
 
 function applyColorMode(mode) {
-    document.body.dataset.colorMode = mode;
+    document.documentElement.dataset.colorMode = mode;
     localStorage.setItem('quizColorMode', mode);
     lightModeBtn.classList.toggle('active', mode === 'light');
     darkModeBtn.classList.toggle('active', mode === 'dark');
+}
+
+function randomizeAll() {
+    // Random mode
+    const modes = ['light', 'dark'];
+    const randomMode = modes[Math.floor(Math.random() * modes.length)];
+    applyColorMode(randomMode);
+
+    // Random theme
+    const randomThemeIndex = Math.floor(Math.random() * themeButtons.length);
+    const randomTheme = themeButtons[randomThemeIndex].dataset.theme;
+    applyTheme(randomTheme);
+
+    // Random font
+    const randomFontIndex = Math.floor(Math.random() * fontButtons.length);
+    const randomFont = fontButtons[randomFontIndex].dataset.font;
+    applyFont(randomFont);
+}
+
+// --- UI & NAVIGATION ---
+
+function showScreen(screenId) {
+    document.querySelectorAll('main > section, #leaderboard-btn-home').forEach(el => el.style.display = 'none');
+    const screen = document.getElementById(screenId);
+    if (screen) {
+        screen.style.display = screenId === 'end-screen' ? 'flex' : 'block';
+    }
+     // Show the home button only when not on the very first screen
+    homeBtn.style.display = screenId === 'language-selection' ? 'none' : 'block';
+    // Show leaderboard button on appropriate screens
+    if (screenId === 'language-selection' || screenId === 'start-screen' || screenId === 'end-screen') {
+        document.getElementById('leaderboard-btn-home').style.display = 'block';
+    }
+
+
+    if (screenHistory[screenHistory.length - 1] !== screenId) {
+        screenHistory.push(screenId);
+    }
+}
+
+function goBack() {
+    if (screenHistory.length > 1) {
+        screenHistory.pop();
+        const previousScreen = screenHistory[screenHistory.length - 1];
+        showScreen(previousScreen);
+        // Special handling for leaderboard button visibility on back navigation
+        if (previousScreen === 'language-selection' || previousScreen === 'start-screen' || previousScreen === 'end-screen') {
+             document.getElementById('leaderboard-btn-home').style.display = 'block';
+        }
+    }
 }
 
 function initializeAppearance() {
@@ -173,22 +290,11 @@ function initializeAppearance() {
     applyColorMode(savedColorMode);
     applyFont(savedFont);
 
-    themeButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            applyTheme(button.dataset.theme);
-        });
-    });
-
-    fontButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            applyFont(button.dataset.font);
-        });
-    });
-
+    themeButtons.forEach(button => button.addEventListener('click', () => applyTheme(button.dataset.theme)));
+    fontButtons.forEach(button => button.addEventListener('click', () => applyFont(button.dataset.font)));
     lightModeBtn.addEventListener('click', () => applyColorMode('light'));
     darkModeBtn.addEventListener('click', () => applyColorMode('dark'));
 }
-
 
 async function setLanguage(lang) {
     currentLanguage = lang;
@@ -196,7 +302,11 @@ async function setLanguage(lang) {
     document.querySelectorAll('[data-translate-key]').forEach(element => {
         const key = element.getAttribute('data-translate-key');
         if (key && translations[lang][key]) {
-            element.textContent = translations[lang][key];
+             if (element.tagName === 'BUTTON' && element.classList.contains('random-btn')) {
+                element.setAttribute('aria-label', translations[lang][key]);
+            } else {
+                element.textContent = translations[lang][key];
+            }
         }
     });
 
@@ -207,9 +317,6 @@ async function setLanguage(lang) {
             frQuizData = await response.json();
         }
         currentQuizData = lang === 'fr' ? frQuizData : enQuizData;
-        languageSelection.style.display = 'none';
-        startScreen.style.display = 'block';
-        homeBtn.style.display = 'block';
     } catch (error) {
         console.error('Failed to load quiz data for selected language:', error);
         alert('Error loading quiz data. Please try again.');
@@ -225,25 +332,11 @@ function shuffleArray(array) {
     return newArray;
 }
 
-function initializeQuiz() {
-    enBtn.addEventListener('click', () => setLanguage('en'));
-    frBtn.addEventListener('click', () => setLanguage('fr'));
-    
-    difficultyButtons.forEach(button => {
-        button.addEventListener('click', () => selectDifficulty(button.dataset.difficulty));
-    });
-
-    tenQuestionsBtn.addEventListener('click', () => startGame('10q'));
-    timeAttackBtn.addEventListener('click', () => startGame('time'));
-    
-    nextBtn.addEventListener('click', nextQuestion);
-    homeBtn.addEventListener('click', goHome);
-}
+// --- GAME LOGIC ---
 
 function selectDifficulty(difficulty) {
     selectedDifficulty = difficulty;
-    startScreen.style.display = 'none';
-    gameModeScreen.style.display = 'block';
+    showScreen('game-mode-screen');
 }
 
 function getQuestionsByDifficulty(difficulty) {
@@ -289,8 +382,6 @@ function startGame(mode) {
     correctAnswersCount = 0;
     currentQuestionIndex = 0;
     scoreEl.textContent = '0';
-
-    gameModeScreen.style.display = 'none';
     
     gameStats.style.display = 'flex';
     
@@ -303,7 +394,7 @@ function startGame(mode) {
         progressContainer.style.display = 'block';
     }
     
-    questionScreen.style.display = 'block';
+    showScreen('question-screen');
     displayQuestion();
 }
 
@@ -364,8 +455,7 @@ function updateStreakDisplay() {
     streakCountEl.textContent = `${streak}x`;
     streakDisplay.style.display = 'block';
     streakDisplay.classList.remove('streaking');
-    // Trigger reflow to restart animation
-    void streakDisplay.offsetWidth;
+    void streakDisplay.offsetWidth; // Trigger reflow to restart animation
     streakDisplay.classList.add('streaking');
 }
 
@@ -417,8 +507,7 @@ function checkAnswer() {
 }
 
 function displayResult(isCorrect, questionData) {
-    questionScreen.style.display = 'none';
-    resultScreen.style.display = 'block';
+    showScreen('result-screen');
     resultScreen.classList.remove('correct', 'wrong');
     
     const correctAnswer = questionData.options[questionData.correctAnswerIndex];
@@ -442,20 +531,23 @@ function displayResult(isCorrect, questionData) {
 
 function nextQuestion() {
     currentQuestionIndex++;
-    resultScreen.style.display = 'none';
-    questionScreen.style.display = 'block';
+    showScreen('question-screen');
     displayQuestion();
 }
 
-function endGame() {
+async function endGame() {
     if (!isGameActive) return;
     isGameActive = false;
     clearInterval(timer);
 
-    questionScreen.style.display = 'none';
-    resultScreen.style.display = 'none';
     gameStats.style.display = 'none';
     progressContainer.style.display = 'none';
+    
+    showScreen('end-screen');
+
+    if (isHighScore(score, selectedDifficulty, gameMode)) {
+        setTimeout(() => showHighscorePrompt(), 500); // Show after animation
+    }
 
     const finalScoreMsg = `${translations[currentLanguage].finalScore} ${score}.`;
     let percentage = 0;
@@ -475,14 +567,15 @@ function endGame() {
         : `${correctAnswersCount}`;
     correctAnswersDisplay.textContent = `${translations[currentLanguage].correctAnswersStat}: ${correctAnswersText}`;
     longestStreakDisplay.textContent = `${translations[currentLanguage].longestStreakStat}: ${maxStreak}x`;
+    
+    questionsAnsweredDisplay.style.display = 'none';
+    accuracyDisplay.style.display = 'none';
 
     if (gameMode === 'time') {
         const totalAnswered = currentQuestionIndex;
         const accuracy = totalAnswered > 0 ? Math.round((correctAnswersCount / totalAnswered) * 100) : 0;
-
         questionsAnsweredDisplay.textContent = `${translations[currentLanguage].questionsAnsweredStat}: ${totalAnswered}`;
         accuracyDisplay.textContent = `${translations[currentLanguage].accuracyStat}: ${accuracy}%`;
-
         questionsAnsweredDisplay.style.display = 'block';
         accuracyDisplay.style.display = 'block';
     }
@@ -495,46 +588,27 @@ function endGame() {
         endMessageTextEl.textContent = translations[currentLanguage].encouragingMessage_high;
     }
     
-    endScreen.style.display = 'flex';
-    // Add class with a slight delay to trigger animations after display change
     setTimeout(() => endScreen.classList.add('visible'), 50);
 }
 
 function goHome() {
     isGameActive = false;
     if (timer) clearInterval(timer);
-
-    // Hide all game screens and clear content to prevent flashes
-    finalScoreTextEl.textContent = '';
-    endMessageTextEl.textContent = '';
-    correctAnswersDisplay.textContent = '';
-    longestStreakDisplay.textContent = '';
-    questionsAnsweredDisplay.textContent = '';
-    accuracyDisplay.textContent = '';
     
-    endScreen.style.display = 'none';
-    endScreen.classList.remove('visible'); // Remove class to reset animations
-    gameModeScreen.style.display = 'none';
-    questionScreen.style.display = 'none';
-    resultScreen.style.display = 'none';
-    startScreen.style.display = 'none';
-    gameStats.style.display = 'none';
+    endScreen.classList.remove('visible');
     homeBtn.style.display = 'none';
+    gameStats.style.display = 'none';
 
-    // Show the very first screen
-    languageSelection.style.display = 'block';
+    screenHistory = ['language-selection'];
+    showScreen('language-selection');
 
-    // Reset all state variables
     score = 0;
     streak = 0;
     maxStreak = 0;
     correctAnswersCount = 0;
     currentQuestionIndex = 0;
     shuffledQuestions = [];
-    selectedDifficulty = '';
-    gameMode = '';
     
-    // UI state reset
     scoreEl.textContent = '0';
     streakCountEl.textContent = '0';
     timerDisplay.style.display = 'none';
@@ -555,20 +629,110 @@ function resetState() {
     }
 }
 
+// --- LEADERBOARD UI ---
+function populateLeaderboard(difficulty, mode) {
+    leaderboardDifficultyBtns.forEach(b => b.classList.toggle('active', b.dataset.difficulty === difficulty));
+    leaderboardModeBtns.forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
+    
+    leaderboardList.innerHTML = ''; // Clear previous list
+    const board = getLeaderboard(difficulty, mode);
+
+    if (board.length === 0) {
+        leaderboardList.innerHTML = `<li class="no-scores">${translations[currentLanguage].noScores}</li>`;
+        return;
+    }
+
+    board.forEach(entry => {
+        const li = document.createElement('li');
+        li.innerHTML = `<span>${entry.name}</span> <span class="leaderboard-score">${entry.score}</span>`;
+        leaderboardList.appendChild(li);
+    });
+}
+
+function showLeaderboardScreen() {
+    showScreen('leaderboard-screen');
+    // Default to showing the last selected game difficulty/mode, or Easy/10q
+    const defaultDifficulty = selectedDifficulty || 'Easy';
+    const defaultMode = gameMode || '10q';
+    populateLeaderboard(defaultDifficulty, defaultMode);
+}
+
+function setupLeaderboardControls() {
+    let selectedLeaderboardDifficulty = 'Easy';
+    let selectedLeaderboardMode = '10q';
+
+    leaderboardDifficultyBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            selectedLeaderboardDifficulty = btn.dataset.difficulty;
+            populateLeaderboard(selectedLeaderboardDifficulty, selectedLeaderboardMode);
+        });
+    });
+
+    leaderboardModeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            selectedLeaderboardMode = btn.dataset.mode;
+            populateLeaderboard(selectedLeaderboardDifficulty, selectedLeaderboardMode);
+        });
+    });
+}
+
+// --- HIGHSCORE PROMPT ---
+function showHighscorePrompt() {
+    playerNameInput.value = '';
+    highscorePromptOverlay.classList.add('visible');
+    setTimeout(() => playerNameInput.focus(), 300);
+}
+
+function hideHighscorePrompt() {
+    highscorePromptOverlay.classList.remove('visible');
+}
+
+function handleHighscoreSubmit(e) {
+    e.preventDefault();
+    const playerName = playerNameInput.value.trim();
+    if (playerName) {
+        addToLeaderboard(playerName, score, selectedDifficulty, gameMode);
+        hideHighscorePrompt();
+    }
+}
+
+// --- INITIALIZATION ---
+function initializeEventListeners() {
+    enBtn.addEventListener('click', () => setLanguage('en'));
+    frBtn.addEventListener('click', () => setLanguage('fr'));
+    
+    startQuizBtn.addEventListener('click', () => {
+        showScreen('start-screen');
+    });
+
+    difficultyButtons.forEach(button => {
+        button.addEventListener('click', () => selectDifficulty(button.dataset.difficulty));
+    });
+
+    tenQuestionsBtn.addEventListener('click', () => startGame('10q'));
+    timeAttackBtn.addEventListener('click', () => startGame('time'));
+    
+    nextBtn.addEventListener('click', nextQuestion);
+    homeBtn.addEventListener('click', goHome);
+
+    leaderboardBtnHome.addEventListener('click', showLeaderboardScreen);
+    leaderboardBtnEnd.addEventListener('click', showLeaderboardScreen);
+    backBtn.addEventListener('click', goBack);
+    highscoreForm.addEventListener('submit', handleHighscoreSubmit);
+
+    // Single randomizer button
+    randomAllBtn.addEventListener('click', randomizeAll);
+}
+
 function setupInitialUI() {
-    // On load, only show the language selection screen.
-    startScreen.style.display = 'none';
-    gameModeScreen.style.display = 'none';
-    questionScreen.style.display = 'none';
-    resultScreen.style.display = 'none';
-    endScreen.style.display = 'none';
-    gameStats.style.display = 'none';
     homeBtn.style.display = 'none';
+    gameStats.style.display = 'none';
     timerDisplay.style.display = 'none';
     streakDisplay.style.display = 'none';
     questionsAnsweredDisplay.style.display = 'none';
     accuracyDisplay.style.display = 'none';
     progressContainer.style.display = 'none';
+    showScreen('language-selection');
 }
 
 async function main() {
@@ -576,10 +740,13 @@ async function main() {
         const response = await fetch('quiz-data.json');
         if (!response.ok) throw new Error(`Network error: ${response.statusText}`);
         enQuizData = await response.json();
-        currentQuizData = enQuizData;
+        
         initializeAppearance();
-        initializeQuiz();
+        await setLanguage('en'); // Set default language and load its data
+        initializeEventListeners();
+        setupLeaderboardControls();
         setupInitialUI();
+
     } catch (error) {
         console.error('Failed to load initial quiz data:', error);
         document.getElementById('app-container').innerHTML = '<h1>Error: Could not load quiz data. Please try refreshing.</h1>';

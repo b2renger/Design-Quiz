@@ -21,6 +21,8 @@
             </div>
         </header>
 
+        <button id="leaderboard-btn-home" class="secondary-btn" data-translate-key="leaderboardTitle">Leaderboard</button>
+
         <div id="progress-container">
             <div id="progress-bar"></div>
         </div>
@@ -53,41 +55,50 @@
                     </svg>
                 </button>
             </div>
-            <h3 data-translate-key="modeTitle" class="selection-title">Choose a Mode</h3>
-            <div id="mode-selection">
-                <button class="mode-btn" id="light-mode-btn" data-mode="light" aria-label="Light Mode">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                </button>
-                <button class="mode-btn" id="dark-mode-btn" data-mode="dark" aria-label="Dark Mode">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            
+            <div id="customization-header">
+                <h3 data-translate-key="customizeTitle">Appearance</h3>
+                <button id="random-all-btn" class="random-btn" data-translate-key="randomLabel" aria-label="Randomize all options">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><circle cx="15.5" cy="8.5" r="1.5"></circle><circle cx="15.5" cy="15.5" r="1.5"></circle><circle cx="8.5" cy="15.5" r="1.5"></circle><circle cx="12" cy="12" r="1.5"></circle></svg>
                 </button>
             </div>
-            <h3 data-translate-key="themeTitle" class="selection-title">Choose a Theme</h3>
-            <div id="theme-selection">
-                <button class="theme-btn" data-theme="sand" aria-label="Sand Theme">
-                    <span style="background-color: #FAEDCA;"></span><span style="background-color: #7EBC89;"></span><span style="background-color: #FE5D26;"></span>
-                </button>
-                <button class="theme-btn" data-theme="shaded" aria-label="Shaded Theme">
-                    <span style="background-color: #AFC2D5;"></span><span style="background-color: #CCDDD3;"></span><span style="background-color: #DFEFCA;"></span><span style="background-color: #B48B7D;"></span>
-                </button>
-                <button class="theme-btn" data-theme="classic" aria-label="Classic Theme">
-                    <span style="background-color: #C5D1EB;"></span><span style="background-color: #92AFD7;"></span><span style="background-color: #5A7684;"></span><span style="background-color: #395B50;"></span>
-                </button>
-                <button class="theme-btn" data-theme="orangy" aria-label="Orangy Theme">
-                    <span style="background-color: #FFAF87;"></span><span style="background-color: #ED6A5E;"></span><span style="background-color: #4CE0B3;"></span><span style="background-color: #377771;"></span>
-                </button>
-                <button class="theme-btn" data-theme="mauve" aria-label="Mauve Theme">
-                    <span style="background-color: #B5D8CC;"></span><span style="background-color: #8D3B72;"></span><span style="background-color: #89A7A7;"></span><span style="background-color: #72E1D1;"></span>
-                </button>
+
+            <div id="customization-controls">
+                <div id="mode-selection">
+                    <button class="mode-btn" id="light-mode-btn" data-mode="light" aria-label="Light Mode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    </button>
+                    <button class="mode-btn" id="dark-mode-btn" data-mode="dark" aria-label="Dark Mode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </button>
+                </div>
+                <div id="theme-selection">
+                    <button class="theme-btn" data-theme="sand" aria-label="Sand Theme">
+                        <span style="background-color: #FAEDCA;"></span><span style="background-color: #7EBC89;"></span><span style="background-color: #FE5D26;"></span>
+                    </button>
+                    <button class="theme-btn" data-theme="shaded" aria-label="Shaded Theme">
+                        <span style="background-color: #AFC2D5;"></span><span style="background-color: #CCDDD3;"></span><span style="background-color: #DFEFCA;"></span><span style="background-color: #B48B7D;"></span>
+                    </button>
+                    <button class="theme-btn" data-theme="classic" aria-label="Classic Theme">
+                        <span style="background-color: #C5D1EB;"></span><span style="background-color: #92AFD7;"></span><span style="background-color: #5A7684;"></span><span style="background-color: #395B50;"></span>
+                    </button>
+                    <button class="theme-btn" data-theme="orangy" aria-label="Orangy Theme">
+                        <span style="background-color: #FFAF87;"></span><span style="background-color: #ED6A5E;"></span><span style="background-color: #4CE0B3;"></span><span style="background-color: #377771;"></span>
+                    </button>
+                    <button class="theme-btn" data-theme="mauve" aria-label="Mauve Theme">
+                        <span style="background-color: #B5D8CC;"></span><span style="background-color: #8D3B72;"></span><span style="background-color: #89A7A7;"></span><span style="background-color: #72E1D1;"></span>
+                    </button>
+                </div>
+                <div id="font-selection">
+                    <button class="font-btn" data-font="poppins" style="font-family: 'Poppins', sans-serif;">Poppins</button>
+                    <button class="font-btn" data-font="inter" style="font-family: 'Inter', sans-serif;">Inter</button>
+                    <button class="font-btn" data-font="playfair" style="font-family: 'Playfair Display', serif;">Playfair</button>
+                    <button class="font-btn" data-font="space-grotesk" style="font-family: 'Space Grotesk', sans-serif;">Grotesk</button>
+                    <button class="font-btn" data-font="bauhaus" style="font-family: 'Jost', sans-serif;">Bauhaus</button>
+                </div>
             </div>
-            <h3 data-translate-key="fontTitle" class="selection-title">Choose a Font</h3>
-             <div id="font-selection">
-                <button class="font-btn" data-font="poppins" style="font-family: 'Poppins', sans-serif;">Poppins</button>
-                <button class="font-btn" data-font="inter" style="font-family: 'Inter', sans-serif;">Inter</button>
-                <button class="font-btn" data-font="playfair" style="font-family: 'Playfair Display', serif;">Playfair</button>
-                <button class="font-btn" data-font="space-grotesk" style="font-family: 'Space Grotesk', sans-serif;">Grotesk</button>
-                <button class="font-btn" data-font="bauhaus" style="font-family: 'Jost', sans-serif;">Bauhaus</button>
-            </div>
+            
+            <button id="start-quiz-btn" data-translate-key="startQuiz">Start Quiz</button>
         </section>
 
         <section id="start-screen" class="card">
@@ -135,9 +146,42 @@
                 <p id="accuracy-display" class="end-stat"></p>
             </div>
             <p id="end-message-text" class="animated-item"></p>
+            <div class="end-screen-actions">
+                <button id="leaderboard-btn-end" class="secondary-btn" data-translate-key="leaderboardTitle">Leaderboard</button>
+            </div>
+        </section>
+
+        <section id="leaderboard-screen" class="card">
+            <h2 data-translate-key="leaderboardTitle">Leaderboard</h2>
+            <div id="leaderboard-selectors">
+                <div id="leaderboard-difficulty-selection" class="selector-group">
+                    <button class="selector-btn" data-difficulty="Easy" data-translate-key="easy">Easy</button>
+                    <button class="selector-btn" data-difficulty="Medium" data-translate-key="medium">Medium</button>
+                    <button class="selector-btn" data-difficulty="Hard" data-translate-key="hard">Hard</button>
+                </div>
+                <div id="leaderboard-mode-selection" class="selector-group">
+                    <button class="selector-btn" data-mode="10q" data-translate-key="tenQuestions">10 Questions</button>
+                    <button class="selector-btn" data-mode="time" data-translate-key="timeAttack">Time Attack (30s)</button>
+                </div>
+            </div>
+            <ol id="leaderboard-list"></ol>
+            <button id="back-btn" class="secondary-btn" data-translate-key="back">Back</button>
         </section>
 
     </main>
+
+    <div id="highscore-prompt-overlay">
+        <div class="card" id="highscore-prompt">
+            <h2 data-translate-key="newHighscoreTitle">New High Score!</h2>
+            <p data-translate-key="enterNamePrompt">Please enter your name for the leaderboard.</p>
+            <form id="highscore-form" aria-labelledby="highscore-prompt">
+                <label for="player-name-input" class="sr-only">Player Name</label>
+                <input type="text" id="player-name-input" maxlength="15" placeholder="AAA" required>
+                <button type="submit" id="submit-score-btn" data-translate-key="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
     <script type="module" src="index.js"></script>
 </body>
 </html>
