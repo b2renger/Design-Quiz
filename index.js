@@ -37,6 +37,8 @@ const translations = {
         questionsAnsweredStat: "Answered",
         accuracyStat: "Accuracy",
         themeTitle: "Choose a Theme",
+        modeTitle: "Choose a Mode",
+        fontTitle: "Choose a Font",
     },
     fr: {
         quizTitle: "Le Quiz du Design et de l'Innovation",
@@ -71,6 +73,8 @@ const translations = {
         questionsAnsweredStat: "Répondues",
         accuracyStat: "Précision",
         themeTitle: "Choisissez un Thème",
+        modeTitle: "Choisissez un Mode",
+        fontTitle: "Choisissez une Police",
     }
 };
 
@@ -86,6 +90,9 @@ const endScreen = document.getElementById('end-screen');
 const enBtn = document.getElementById('en-btn');
 const frBtn = document.getElementById('fr-btn');
 const themeButtons = document.querySelectorAll('.theme-btn');
+const fontButtons = document.querySelectorAll('.font-btn');
+const lightModeBtn = document.getElementById('light-mode-btn');
+const darkModeBtn = document.getElementById('dark-mode-btn');
 const difficultyButtons = document.querySelectorAll('.difficulty-btn');
 const tenQuestionsBtn = document.getElementById('ten-questions-btn');
 const timeAttackBtn = document.getElementById('time-attack-btn');
@@ -142,20 +149,50 @@ function applyTheme(theme) {
     });
 }
 
-function initializeTheming() {
+function applyFont(font) {
+    document.body.dataset.font = font;
+    localStorage.setItem('quizFont', font);
+    fontButtons.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.font === font);
+    });
+}
+
+function applyColorMode(mode) {
+    document.body.dataset.colorMode = mode;
+    localStorage.setItem('quizColorMode', mode);
+    lightModeBtn.classList.toggle('active', mode === 'light');
+    darkModeBtn.classList.toggle('active', mode === 'dark');
+}
+
+function initializeAppearance() {
     const savedTheme = localStorage.getItem('quizTheme') || 'sand';
+    const savedColorMode = localStorage.getItem('quizColorMode') || 'light';
+    const savedFont = localStorage.getItem('quizFont') || 'poppins';
+    
     applyTheme(savedTheme);
+    applyColorMode(savedColorMode);
+    applyFont(savedFont);
 
     themeButtons.forEach(button => {
         button.addEventListener('click', () => {
             applyTheme(button.dataset.theme);
         });
     });
+
+    fontButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            applyFont(button.dataset.font);
+        });
+    });
+
+    lightModeBtn.addEventListener('click', () => applyColorMode('light'));
+    darkModeBtn.addEventListener('click', () => applyColorMode('dark'));
 }
 
 
 async function setLanguage(lang) {
     currentLanguage = lang;
+    document.documentElement.lang = lang;
     document.querySelectorAll('[data-translate-key]').forEach(element => {
         const key = element.getAttribute('data-translate-key');
         if (key && translations[lang][key]) {
@@ -540,7 +577,7 @@ async function main() {
         if (!response.ok) throw new Error(`Network error: ${response.statusText}`);
         enQuizData = await response.json();
         currentQuizData = enQuizData;
-        initializeTheming();
+        initializeAppearance();
         initializeQuiz();
         setupInitialUI();
     } catch (error) {
