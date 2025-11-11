@@ -987,7 +987,7 @@
   {
     "name": "Muriel Cooper",
     "imageFace": "./images/Cooper1.jpg",
-    "imageProject": "./images/Cooper2.png",
+    "imageProject": "./images/Cooper2.jpg",
     "quiz": [
       {
         "difficulty": "easy",
@@ -1479,7 +1479,7 @@
   {
     "name": "Paul Rand",
     "imageFace": "./images/Rand1.jpg",
-    "imageProject": "./images/Rand2.png",
+    "imageProject": "./images/Rand2.jpg",
     "quiz": [
       {
         "difficulty": "easy",
@@ -2340,7 +2340,7 @@
   {
     "name": "Ivan Sutherland",
     "imageFace": "./images/Sutherland1.jpg",
-    "imageProject": "./images/Sutherland2.png",
+    "imageProject": "./images/Sutherland2.jpg",
     "quiz": [
       {
         "difficulty": "easy",
