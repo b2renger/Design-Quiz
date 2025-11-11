@@ -2,8 +2,8 @@
 [
   {
     "name": "Louise Bourgeois",
-    "imageFace": "./images/Bourgeois1.jpg",
-    "imageProject": "./images/Bourgeois2.jpg",
+  "imageFace": "./images/Bourgeois1.webp",
+  "imageProject": "./images/Bourgeois2.webp",
     "quiz": [
       {
         "difficulty": "easy",
@@ -43,8 +43,8 @@
   },
   {
     "name": "Charles Eames",
-    "imageFace": "./images/Eames1.jpg",
-    "imageProject": "./images/Eames2.jpg",
+  "imageFace": "./images/Eames1.webp",
+  "imageProject": "./images/Eames2.webp",
     "quiz": [
       {
         "difficulty": "easy",
@@ -84,8 +84,8 @@
   },
   {
     "name": "Alessandro Mendini",
-    "imageFace": "./images/Mendini1.jpeg",
-    "imageProject": "./images/Mendini2.jpeg",
+  "imageFace": "./images/Mendini1.webp",
+  "imageProject": "./images/Medini2.webp",
     "quiz": [
       {
         "difficulty": "easy",
@@ -125,8 +125,8 @@
   },
   {
     "name": "Andrée Putman",
-    "imageFace": "./images/Putman1.jpg",
-    "imageProject": "./images/Putman2.jpg",
+  "imageFace": "./images/Puttman1.webp",
+  "imageProject": "./images/Puttman2.webp",
     "quiz": [
       {
         "difficulty": "easy",
@@ -166,8 +166,8 @@
   },
   {
     "name": "Charlotte Perriand",
-    "imageFace": "./images/Perriand1.jpg",
-    "imageProject": "./images/Perriand2.jpg",
+  "imageFace": "./images/Perrian1.webp",
+  "imageProject": "./images/Perrian2.webp",
     "quiz": [
       {
         "difficulty": "easy",
@@ -207,8 +207,8 @@
   },
   {
     "name": "Alvar Aalto",
-    "imageFace": "./images/Aalto1.jpg",
-    "imageProject": "./images/Aalto2.jpg",
+  "imageFace": "./images/Aalto1.webp",
+  "imageProject": "./images/Aalto2.webp",
     "quiz": [
       {
         "difficulty": "easy",
@@ -248,8 +248,8 @@
   },
   {
     "name": "Ariane Mnouchkine",
-    "imageFace": "./images/Mnouchkine1.jpg",
-    "imageProject": "./images/Mnouchkine2.jpg",
+  "imageFace": "./images/Mnouchkine1.webp",
+  "imageProject": "./images/Mnouchkine2.jpg",
     "quiz": [
       {
         "difficulty": "easy",
@@ -289,8 +289,8 @@
   },
   {
     "name": "Margaret Hamilton",
-    "imageFace": "./images/Hamilton1.jpg",
-    "imageProject": "./images/Hamilton2.png",
+  "imageFace": "./images/Hamilton1.jpg",
+  "imageProject": "./images/Hamilton2.jpg",
     "quiz": [
       {
         "difficulty": "easy",
@@ -330,8 +330,8 @@
   },
   {
     "name": "Gae Aulenti",
-    "imageFace": "./images/Aulenti1.jpg",
-    "imageProject": "./images/Aulenti2.jpg",
+  "imageFace": "./images/Aulenti1.jpg",
+  "imageProject": "./images/Aulenti2.jpg",
     "quiz": [
       {
         "difficulty": "easy",
@@ -863,8 +863,8 @@
   },
   {
     "name": "Victor Papanek",
-    "imageFace": "./images/Papanek1.jpg",
-    "imageProject": "./images/Papanek2.jpg",
+    "imageFace": "./images/Papanek1.webp",
+    "imageProject": "./images/Papanek2.webp",
     "quiz": [
       {
         "difficulty": "easy",
@@ -904,8 +904,8 @@
   },
   {
     "name": "Lisa Strausfeld",
-    "imageFace": "./images/Strausfeld1.jpg",
-    "imageProject": "./images/Strausfeld2.png",
+    "imageFace": "./images/Strausfeld1.webp",
+    "imageProject": "./images/Strausfeld2.jpg",
     "quiz": [
       {
         "difficulty": "easy",
@@ -1765,8 +1765,8 @@
   },
   {
     "name": "Norman Bel Geddes",
-    "imageFace": "./images/BelGeddes1.jpg",
-    "imageProject": "./images/BelGeddes2.jpg",
+    "imageFace": "./images/Geddes1.jpg",
+    "imageProject": "./images/Geddes2.jpg",
     "quiz": [
       {
         "difficulty": "easy",
@@ -1807,7 +1807,7 @@
   {
     "name": "Ada Lovelace",
     "imageFace": "./images/Lovelace1.jpg",
-    "imageProject": "./images/Lovelace2.png",
+    "imageProject": "./images/Lovelace2.jpg",
     "quiz": [
       {
         "difficulty": "easy",
@@ -1971,7 +1971,7 @@
   {
     "name": "Raymond Loewy",
     "imageFace": "./images/Loewy1.jpg",
-    "imageProject": "./images/Loewy2.jpg",
+    "imageProject": "./images/Loewy2.png",
     "quiz": [
       {
         "difficulty": "easy",
@@ -2053,7 +2053,7 @@
   {
     "name": "Tim Brown",
     "imageFace": "./images/Brown1.jpg",
-    "imageProject": "./images/Brown2.jpg",
+    "imageProject": "./images/Brown2.png",
     "quiz": [
       {
         "difficulty": "easy",
