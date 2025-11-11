@@ -643,14 +643,24 @@ button {
     color: var(--text-color); /* Darker text for bio readability */
 }
 
+#pioneer-images-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
 .pioneer-image {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    border-radius: 12px;
     object-fit: cover;
-    margin: 0 auto 1.5rem;
-    display: block;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--border-color);
+    transition: transform 0.2s;
+}
+.pioneer-image:hover {
+    transform: scale(1.05);
 }
 
 #end-screen {

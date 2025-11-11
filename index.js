@@ -129,7 +129,9 @@ const answerButtonsEl = document.getElementById('answer-buttons');
 const resultMessageEl = document.getElementById('result-message');
 const correctAnswerTextEl = document.getElementById('correct-answer-text');
 const bioTextEl = document.getElementById('bio-text');
-const pioneerImageEl = document.getElementById('pioneer-image');
+const pioneerImagesContainer = document.getElementById('pioneer-images-container');
+const pioneerImageFaceEl = document.getElementById('pioneer-image-face');
+const pioneerImageProjectEl = document.getElementById('pioneer-image-project');
 const scoreEl = document.getElementById('score');
 const timeEl = document.getElementById('time');
 const streakCountEl = document.getElementById('streak-count');
@@ -349,7 +351,8 @@ function getQuestionsByDifficulty(difficulty) {
             correctAnswerIndex: q.answers.indexOf(q.correct_answer),
             name: person.name,
             bio: person.know_more.replace(citationRegex, '').trim(),
-            imageUrl: null,
+            imageFaceUrl: person.imageFace,
+            imageProjectUrl: person.imageProject,
         }))
     );
     return allQuestions.filter(q => q.difficulty.toLowerCase() === difficulty.toLowerCase());
@@ -523,7 +526,17 @@ function displayResult(isCorrect, questionData) {
     }
     
     correctAnswerTextEl.style.display = 'block';
-    pioneerImageEl.style.display = 'none'; // Images are not available
+
+    if (questionData.imageFaceUrl && questionData.imageProjectUrl) {
+        pioneerImagesContainer.style.display = 'flex';
+        pioneerImageFaceEl.src = questionData.imageFaceUrl;
+        pioneerImageFaceEl.alt = `${questionData.name} (portrait)`;
+        pioneerImageProjectEl.src = questionData.imageProjectUrl;
+        pioneerImageProjectEl.alt = `${questionData.name} (work)`;
+    } else {
+        pioneerImagesContainer.style.display = 'none';
+    }
+
     bioTextEl.textContent = questionData.bio;
     const learnMoreEl = resultScreen.querySelector('[data-translate-key="learnMore"]');
     learnMoreEl.textContent = `${translations[currentLanguage].learnMore} ${questionData.name}`;
