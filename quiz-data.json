@@ -84,8 +84,8 @@
   },
   {
     "name": "Alessandro Mendini",
-    "imageFace": "./images/Mendini1.jpg",
-    "imageProject": "./images/Mendini2.jpg",
+    "imageFace": "./images/Mendini1.jpeg",
+    "imageProject": "./images/Mendini2.jpeg",
     "quiz": [
       {
         "difficulty": "easy",

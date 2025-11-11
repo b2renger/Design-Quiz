@@ -514,7 +514,7 @@ function displayResult(isCorrect, questionData) {
     resultScreen.classList.remove('correct', 'wrong');
     
     const correctAnswer = questionData.options[questionData.correctAnswerIndex];
-
+    console.log(questionData)
     if (isCorrect) {
         resultMessageEl.textContent = translations[currentLanguage].correctMessage;
         resultScreen.classList.add('correct');
